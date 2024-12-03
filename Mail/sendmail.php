@@ -6,9 +6,9 @@ require 'smtp/PHPMailerAutoload.php';
 header('Content-Type: application/json');
 
 class sendmail
-{    public $SenderEmail = "website@swastikaoverseas.in";
-    public $SenderEmailPassword = "#8/|^NDt3R";
-    public $ReciverEmail = "rahul.shah@theuniqueitsolution.com";
+{    public $SenderEmail = "hitixa.bhuva@theuniqueitsolution.com";
+    public $SenderEmailPassword = "1z,76)+1J_kD";
+    public $ReciverEmail = "hitixa.bhuva@theuniqueitsolution.com";
     public $Subject = "ggg ";
     public $Body = "bubububb";
 

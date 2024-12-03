@@ -7025,8 +7025,10 @@ fieldset:disabled .btn {
 
 .card-body {
     flex: 1 1 auto;
-    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
     color: var(--bs-card-color)
+}
+.card-body-padd{
+   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
 
 .card-title {
@@ -14061,7 +14063,7 @@ fieldset:disabled .btn {
 
 .text-muted {
     --bs-text-opacity: 1;
-    color: #aab0bc !important
+    color: #60697b !important
 }
 
 .text-inverse {
@@ -30146,24 +30148,7 @@ h4 {
     line-height: 1.45
 }
 
-.h5,
-h5 {
-    line-height: 1.5
-}
 
-.h6,
-h6 {
-    line-height: 1.55
-}
-
-.display-1 {
-    line-height: 1.2
-}
-
-.display-2,
-.display-3 {
-    line-height: 1.25
-}
 
 .display-4,
 .display-5 {
@@ -50006,7 +49991,7 @@ footer [class*=col-] .widget+.widget {
 }
 /* hero gradient */
 .gradient-font{
-    font-size: 55px ;
+    font-size: 50px ;
 }
 @media (max-width: 1024px) {
     .gradient-font {
@@ -50099,15 +50084,10 @@ footer [class*=col-] .widget+.widget {
     font-size: 1rem;
     color: #4a5568;
     text-align: center;
-    line-height: 1.8;
     margin-bottom: 1rem;
     position: relative;
     padding-left: 1.5rem;
     transition: all 0.3s ease;
-}
-
-.description-worry:hover {
-    padding-left: 2rem;
 }
 
 .image-placeholder {
@@ -50664,7 +50644,7 @@ footer [class*=col-] .widget+.widget {
 
   .booking-section {
     background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
-    padding: 6rem 0;
+    padding: 4rem 0;
     position: relative;
   }
 
