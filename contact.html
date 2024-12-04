@@ -172,12 +172,12 @@
         <div class="container">
           <h1 class="display-4 fw-bold text-white">Contact Us</h1>
           <p class="lead">
-            Learn about our mission, values, and the team dedicated to
-            delivering exceptional technology solutions for your business.
+            Need help or have queries? Connect with us, and our team will deliver tailored support to meet your requirements.
           </p>
         </div>
       </div>
     </section>
+
     <div class="container contact-container mt-15">
       <div class="row g-4">
         <div class="col-lg-5">
@@ -237,14 +237,14 @@
 
         <div class="col-lg-7 get-in-touch">
           <h2>Get in Touch</h2>
-          <form id="contact-form">
+          <form id="contactForm">
             <div class="row">
               <div class="col-md-6 position-relative">
                 <input
                   required
                   type="text"
                   class="form-control pe-10"
-                  placeholder="Name"
+                  placeholder="name"
                   id="name"
                 />
                 <svg
@@ -267,7 +267,7 @@
                   required
                   type="email"
                   class="form-control pe-10"
-                  placeholder="Email"
+                  placeholder="email"
                   id="email"
                 />
                 <svg
@@ -294,7 +294,7 @@
                   required
                   type="text"
                   class="form-control pe-10"
-                  placeholder="Subject"
+                  placeholder="subject"
                   id="subject"
                 />
                 <svg
@@ -319,7 +319,7 @@
                   required
                   type="tel"
                   class="form-control pe-10"
-                  placeholder="Phone"
+                  placeholder="phone"
                   id="phone"
                 />
                 <svg
@@ -344,19 +344,19 @@
                 required
                 type="text"
                 class="form-control pe-10"
-                placeholder="Company Name"
-                id="company-name"
+                placeholder="companyName"
+                id="companyName"
               />
             </div>
             <div class="position-relative">
               <textarea
                 required
                 class="form-control pe-10"
-                placeholder="Description"
+                placeholder="description"
                 id="description"
               ></textarea>
             </div>
-            <button type="button" onclick="hello()" class="btn-send">
+            <button type="submit" class="btn-send">
               Send Message
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -453,7 +453,6 @@
               </a>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-6 footer-column">
             <h3 class="footer-heading">Get in Touch</h3>
             <div class="contact-info">
@@ -516,7 +515,11 @@
     </footer>
 
     <script>
-      functino
+      
+    </script>
+
+    <script>
+      // functino
       // Utility function to toggle validation classes
       function toggleClassForField(fieldId, isValid) {
         const field = document.getElementById(fieldId);
@@ -529,205 +532,14 @@
         }
       }
     </script>
-    <script src="./assets/js/custom.js"></script>
-    <!-- <script src="./assets/js/email.js"></script> -->
+
+    <!-- <script src="./assets/js/custom.js"></script> -->
+    <script src="./assets/js/email.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script
-      data-cfasync="false"
-      src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/theme.js"></script>
-<script>
-  function hello(){
-    event.preventDefault();
 
-    // Gather data from the form
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const subject = document.getElementById("subject").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const companyName = document.getElementById("company-name").value.trim();
-    const description = document.getElementById("description").value.trim();
 
-    
-alert("hello from hello function-123=");
-  }
-</script>
-    <!-- navbar script -->
-    <script> 
-      function trial() {
-    // Ensure `event` is passed to the function
-    event.preventDefault();
-
-    // Gather data from the form
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const subject = document.getElementById("subject").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const companyName = document.getElementById("company-name").value.trim();
-    const description = document.getElementById("description").value.trim();
-
-    // Validation logic
-    // let isValidForm = true;
-
-    // if (!name) {
-    //   toggleClassForField("name", false);
-    //   isValidForm = false;
-    // } else {
-    //   toggleClassForField("name", true);
-    // }
-
-    // if (!email || !isValidEmail(email)) {
-    //   toggleClassForField("email", false);
-    //   isValidForm = false;
-    // } else {
-    //   toggleClassForField("email", true);
-    // }
-
-    // if (!subject) {
-    //   toggleClassForField("subject", false);
-    //   isValidForm = false;
-    // } else {
-    //   toggleClassForField("subject", true);
-    // }
-
-    // if (!phone) {
-    //   toggleClassForField("phone", false);
-    //   isValidForm = false;
-    // } else {
-    //   toggleClassForField("phone", true);
-    // }
-
-    // if (!companyName) {
-    //   toggleClassForField("company-name", false);
-    //   isValidForm = false;
-    // } else {
-    //   toggleClassForField("company-name", true);
-    // }
-
-    // if (!description) {
-    //   toggleClassForField("description", false);
-    //   isValidForm = false;
-    // } else {
-    //   toggleClassForField("description", true);
-    // }
-
-    // if (!isValidForm) {
-    //   showFeedback("Please fill in all required fields correctly.", false);
-    //   return;
-    // }
-
-    // Create email data
-    const emailData = {
-      Host: "smtp.hostinger.com",
-      Port: "465",
-      SenderEmail: "hitixa.bhuva@theuniqueitsolution.com",
-      SenderEmailPassword: "1z,76)+1J_kD",
-      ReciverEmail: "hitixa.bhuva@theuniqueitsolution.com",
-      Subject: "Contact Form Submission",
-      Body: `
-        <html>
-          <head>
-            <style>
-              /* Your styles here */
-            </style>
-          </head>
-          <body>
-            <h1>Contact Form Submission</h1>
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Subject:</strong> ${subject}</p>
-            <p><strong>Phone:</strong> ${phone}</p>
-            <p><strong>Company Name:</strong> ${companyName}</p>
-            <p><strong>Description:</strong> ${description}</p>
-          </body>
-        </html>
-      `,
-    };
-
-    // API URL for sending email
-    const apiUrl = "./Mail/sendmail.php";
-    const headers = { "Content-Type": "application/json" };
-
-    // Send the email data
-    fetch(apiUrl, {
-      method: "POST",
-      headers: headers,
-      body: JSON.stringify(emailData),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.status) {
-          showFeedback("Message sent successfully!", true);
-          document.getElementById("contact-form").reset();
-        } else {
-          showFeedback("Message sending failed. Please try again.", false);
-        }
-      })
-      .catch(() => {
-        showFeedback("Message sending failed. Please try again.", false);
-      });
-  }
-    </script>
-    <script>
-      // Utility function to validate email
-      function isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-      }
-
-      // Utility function to clear form fields
-      function clearForm() {
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("subject").value = "";
-        document.getElementById("phone").value = "";
-        document.getElementById("companyName").value = "";
-        document.getElementById("description").value = "";
-
-        [
-          "name",
-          "email",
-          "subject",
-          "phone",
-          "companyName",
-          "description",
-        ].forEach((fieldId) => {
-          const field = document.getElementById(fieldId);
-          field.classList.remove("is-valid");
-          field.classList.remove("is-invalid");
-        });
-      }
-
-      // Google translate script
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            autoDisplay: "true",
-            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
-          },
-          "google_translate_element"
-        );
-      }
-
-      function showFeedback(message, isSuccess = true) {
-        let feedbackElement = document.getElementById("feedback");
-        if (!feedbackElement) {
-          feedbackElement = document.createElement("div");
-          feedbackElement.id = "feedback";
-          feedbackElement.style.position = "fixed";
-          feedbackElement.style.top = "20px";
-          feedbackElement.style.right = "20px";
-          feedbackElement.style.padding = "15px 25px";
-          feedbackElement.style.borderRadius = "5px";
-          feedbackElement.style.backgroundColor = "#fff";
-          feedbackElement.style.boxShadow = "0 2px 5px rgba(0,0,0,0.2)";
-          feedbackElement.style.zIndex = "1000";
-          document.body.appendChild(feedbackElement);
-        }
-      }
-    </script>
   </body>
 </html>

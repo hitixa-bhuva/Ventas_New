@@ -1,18 +1,15 @@
 <?php
-
-// No need for "use" statements when not using namespaces
 require 'smtp/PHPMailerAutoload.php';
 
-header('Content-Type: application/json');
-
-class sendmail
-{    public $SenderEmail = "hitixa.bhuva@theuniqueitsolution.com";
-    public $SenderEmailPassword = "1z,76)+1J_kD";
+class SendMail
+{
+    public $SenderEmail = "hitixa.bhuva@theuniqueitsolution.com";
+    public $SenderEmailPassword = "htitxa@123455";
     public $ReciverEmail = "hitixa.bhuva@theuniqueitsolution.com";
-    public $Subject = "ggg ";
-    public $Body = "bubububb";
+    public $Subject = "";
+    public $Body = "hello";
 
-    function sendMail()
+    public function sendMail()
     {
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
             echo json_encode(['status' => false, 'message' => 'Invalid request method']);
@@ -24,49 +21,65 @@ class sendmail
             echo json_encode(['status' => false, 'message' => 'Invalid JSON data']);
             return;
         }
-    
-        // Fetch data from the decoded JSON
+
+
+
+        $inputData = json_decode(file_get_contents('php://input'), true);
         $subject = isset($inputData['Subject']) ? $inputData['Subject'] : '';
         $body = isset($inputData['Body']) ? $inputData['Body'] : '';
 
-        // Basic validation
-        if (empty($subject) || empty($body)) {
-            echo json_encode(['status' => false, 'message' => 'Subject and Body are required']);
-            return;
-        }
-    
 
         $mail = new PHPMailer();
+        $mail->SMTPDebug = 0; // Change to 3 for detailed debug output
+        $mail->isSMTP();
+        $mail->SMTPAuth = true;
+        $mail->SMTPSecure = 'tls';
+        $mail->Host = "216.10.241.228";
+        $mail->Port = 587;
+        $mail->isHTML(true);
+        $mail->CharSet = 'UTF-8';
+        $mail->Username = $this->SenderEmail;
+        $mail->Password = $this->SenderEmailPassword;
+        $mail->setFrom($this->SenderEmail, 'Your Name or Company'); // Add a name for better identification
+        $mail->Subject = $subject;
+        $mail->Body = $body;
+        $mail->addAddress($this->ReciverEmail);
+
+        // Optional: Configure SSL options
+        $mail->SMTPOptions = [
+            'ssl' => [
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true,
+            ],
+        ];
 
         try {
-            $mail->isSMTP();
-            $mail->Host = 'smtp.hostinger.com';
-            $mail->SMTPAuth = true;
-            $mail->Username = $this->SenderEmail;
-            $mail->Password = $this->SenderEmailPassword;
-            // $mail->SMTPSecure = 'tls';
-            $mail->Port = 587;
-            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-
-            $mail->setFrom($this->SenderEmail, 'Swastika Overseas');
-            $mail->addAddress($this->ReciverEmail,'Swastika Overseas');
-
-            $mail->isHTML(false);
-            $mail->Subject = $subject;
-            $mail->Body =   $body ;
-            $mail->AltBody = strip_tags($this->Body);
-            // die($mail->send());
-
-            if ($mail->send()) {
-                echo json_encode(['status' => true, 'message' => 'Message has been sent']);
+            if (!$mail->send()) {
+                // Handle failure
+                echo json_encode([
+                    'status' => false,
+                    'message' => 'Message could not be sent.',
+                    'error' => $mail->ErrorInfo,
+                ]);
             } else {
-                echo json_encode(['status' => false, 'message' => 'Mailer Error: ' . $mail->ErrorInfo]);
+                // Handle success
+                echo json_encode([
+                    'status' => true,
+                    'message' => 'Message sent successfully.',
+                ]);
             }
         } catch (Exception $e) {
-            echo json_encode(['status' => false, 'message' => "Message could not be sent. Mailer Error: {$e->getMessage()}"]);
+            echo json_encode([
+                'status' => false,
+                'message' => 'Message could not be sent. Mailer Error.',
+                'error' => $e->getMessage(),
+            ]);
         }
     }
 }
 
-$mailer = new sendmail();
+// Instantiate the class and call the method
+$mailer = new SendMail();
 $mailer->sendMail();
+?>
