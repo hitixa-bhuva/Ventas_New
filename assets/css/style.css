@@ -5656,22 +5656,7 @@ fieldset:disabled .btn {
     --bs-gradient: none
 }
 
-.btn-outline-primary {
-    --bs-btn-color: #3f78e0;
-    --bs-btn-border-color: #3f78e0;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #3f78e0;
-    --bs-btn-hover-border-color: #3f78e0;
-    --bs-btn-focus-shadow-rgb: 63, 120, 224;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #3f78e0;
-    --bs-btn-active-border-color: #3f78e0;
-    --bs-btn-active-shadow: 0rem 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
-    --bs-btn-disabled-color: #3f78e0;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #3f78e0;
-    --bs-gradient: none
-}
+
 
 .btn-outline-secondary {
     --bs-btn-color: #aab0bc;
@@ -6342,10 +6327,45 @@ fieldset:disabled .btn {
         transition: none
     }
 }
+ .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
+    .navbar-nav .nav-link {
+        display: block;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+        font-size: var(--bs-nav-link-font-size);
+        font-weight: var(--bs-nav-link-font-weight);
+        color: var(--bs-nav-link-color);
+        background: 0 0;
+        border: 0;
+        transition: color .2s ease-in-out;
+    }
+
+    /* Hover Effect */
+    /* .navbar-nav .nav-link:hover {
+      color: #1a5cb8;
+    } */
+
+    /* Active Link with Gradient Underline */
+
+    .navbar-nav .nav-link.active::after {
+        content: '';
+        position: absolute;
+        left: 25%;
+        bottom: 15px;
+        width: 50px;
+        height: 3px;
+      background-image: linear-gradient(0deg, rgba(1, 157, 224, 1) 0%, rgba(49, 63, 145, 1) 100%);
+      border-radius: 1px;
+    }
 .nav-link:focus,
 .nav-link:hover {
-    color: var(--bs-nav-link-hover-color)
+    background: linear-gradient(0deg, rgba(1, 157, 224, 1) 0%, rgba(49, 63, 145, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .nav-link:focus-visible {
@@ -6537,7 +6557,10 @@ fieldset:disabled .btn {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: var(--bs-navbar-active-color)
+    background: linear-gradient(0deg, rgba(1, 157, 224, 1) 0%, rgba(49, 63, 145, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .navbar-nav .dropdown-menu {
@@ -35298,7 +35321,11 @@ form.dark-fields .form-control:focus {
     margin: 0 auto;
     vertical-align: middle;
     font-size: 1.1rem;
-    font-weight: 700
+    font-weight: 700; 
+    background: linear-gradient(0deg, rgba(1, 157, 224, 1) 0%, rgba(49, 63, 145, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .btn.btn-expand {
@@ -36310,25 +36337,6 @@ button:focus {
     --bs-btn-active-border-color: #3f78e0;
     --bs-btn-disabled-color: #3f78e0;
     --bs-btn-disabled-border-color: #3f78e0
-}
-
-.btn-gradient {
-    color: var(--bs-white) !important;
-    border: 0;
-    padding-top: .6rem;
-    padding-bottom: .6rem
-}
-
-.btn-gradient.btn-sm,
-.btn-group-sm>.btn-gradient.btn {
-    padding-top: .5rem;
-    padding-bottom: .5rem
-}
-
-.btn-gradient.btn-lg,
-.btn-group-lg>.btn-gradient.btn {
-    padding-top: .75rem;
-    padding-bottom: .75rem
 }
 
 .gradient-1 {
@@ -39966,8 +39974,8 @@ header {
 }
 
 .navbar.navbar-light.fixed .btn:not(.btn-expand):not(.btn-gradient) {
-    background: var(--bs-primary);
-    border-color: var(--bs-primary);
+    background: linear-gradient(0deg, rgba(1,157,224,1) 0%, rgba(49,63,145,1) 100%);
+    border-color: linear-gradient(0deg, rgba(1,157,224,1) 0%, rgba(49,63,145,1) 100%);
     color: var(--bs-white)
 }
 
@@ -50326,7 +50334,7 @@ footer [class*=col-] .widget+.widget {
     bottom: 0;
     width: 40px;
     height: 2px;
-    background-color: var(--primary-color);
+    background-image: linear-gradient(0deg, rgba(1,157,224,1) 0%, rgba(49,63,145,1) 100%);;
 }
 
 .social-links {
@@ -50350,7 +50358,7 @@ footer [class*=col-] .widget+.widget {
 }
 
 .social-links a:hover {
-    background-color: var(--primary-color);
+    background-image: linear-gradient(0deg, rgba(1,157,224,1) 0%, rgba(49,63,145,1) 100%);
     color: white;
     transform: translateY(-2px);
 }
@@ -50445,7 +50453,7 @@ footer [class*=col-] .widget+.widget {
     right: 5px;
     top: 5px;
     padding: 8px 25px;
-    background-color: #3f78e0;
+    background-image: linear-gradient(0deg, rgba(1, 157, 224, 1) 0%, rgba(49, 63, 145, 1) 100%);;
     color: white;
     border: none;
     border-radius: 25px;
@@ -50522,7 +50530,7 @@ footer [class*=col-] .widget+.widget {
     box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
 }
 .container.contact-container .btn-send {
-    background-color: #0d6efd;
+    background-image: linear-gradient(0deg, rgba(1,157,224,1) 0%, rgba(49,63,145,1) 100%);
     color: white;
     padding: 12px 30px;
     border-radius: 8px;
@@ -50684,12 +50692,12 @@ footer [class*=col-] .widget+.widget {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-    transform: rotate(-10deg);
+    transform: rotate(0deg) scale(1.05);
     transition: all 0.3s ease;
   }
 
   .icon-wrapper:hover {
-    transform: rotate(0deg) scale(1.05);
+    transform: rotate(-10deg);
   }
 
   .custom-form {
@@ -50747,7 +50755,7 @@ footer [class*=col-] .widget+.widget {
 
   .feature-badge {
     background: #667de51a;
-    color: #3f78e0;
+    color: rgba(49, 63, 145, 1);
     padding: 0.5rem 1rem;
     border-radius: 100px;
     font-size: 0.875rem;
@@ -51016,7 +51024,10 @@ footer [class*=col-] .widget+.widget {
   
   /* hero section btn desin */
   .dont-worry-btn {
-    color: #343f52;
+    background: linear-gradient(0deg, rgba(1,157,224,1) 0%, rgba(49,63,145,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Fallback for non-Webkit browsers */
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
@@ -51084,7 +51095,7 @@ footer [class*=col-] .widget+.widget {
     height: 44px;
     margin-left: 17px;
     /* margin-top: -35px; */
-    box-shadow: inset 0 0 0 2px #343f52;
+    box-shadow: inset 0 0 0 2px rgba(49,63,145,1);
     border-radius: 25px;
     cursor: pointer;
     display: flex;
@@ -51096,7 +51107,7 @@ footer [class*=col-] .widget+.widget {
     content: '';
     width: 8px;
     height: 8px;
-    background: #343f52;
+    background: rgba(49,63,145,1);
     margin-left: 2px;
     border-radius: 4px;
     -webkit-animation-duration: 1.5s;
@@ -51136,3 +51147,5 @@ footer [class*=col-] .widget+.widget {
 .background-container {
 
   }
+
+  
