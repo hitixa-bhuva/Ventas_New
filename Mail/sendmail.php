@@ -11,19 +11,6 @@ class SendMail
 
     public function sendMail()
     {
-        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-            echo json_encode(['status' => false, 'message' => 'Invalid request method']);
-            return;
-        }
-        $inputData = json_decode(file_get_contents('php://input'), true);
-
-        if (json_last_error() !== JSON_ERROR_NONE) {
-            echo json_encode(['status' => false, 'message' => 'Invalid JSON data']);
-            return;
-        }
-
-
-
         $inputData = json_decode(file_get_contents('php://input'), true);
         $subject = isset($inputData['Subject']) ? $inputData['Subject'] : '';
         $body = isset($inputData['Body']) ? $inputData['Body'] : '';
