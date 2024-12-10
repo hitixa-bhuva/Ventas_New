@@ -6,14 +6,24 @@
   footernumberform.addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent the form from submitting normally
 
-      debugger
       // Gather data from the form - updated selectors to match new HTML
       const phonenumberfooter = document.getElementById("phonenumberft").value;
      
       console.log("Phone Number Entered:", phonenumberfooter);
 
+
+    // Validate if the input is numeric
+    if (!/^\d{1,15}$/.test(phonenumberfooter)) {
+        // Show feedback for invalid input
+        showFeedback(
+            "Invalid input! Only numbers are allowed, and the number should be up to 15 digits.",
+            false
+        );
+        return; // Stop further execution
+    }
+
       // Hardcoded subject
-      const subject = "New Booking Inquiry";
+      const subject = "New Book Demo Inquiry";
 
       // Create email data
       const emailData = {
@@ -182,7 +192,13 @@
           .then((data) => {
               console.log("Email sent successfully:", data);
               const phonenumberfooter = document.getElementById("phonenumberft").value;
-              showFeedback("Message sent successfully", "text-primary", true);
+              showFeedback("Our team will be in touch soon!", "text-primary", true);
+
+              // Clear the input field
+            document.getElementById("phonenumberft").value = "";
+
+            // Show success feedback
+            showFeedback("Our team will be in touch soon!", true);
 
           })
           .catch((error) => {
@@ -194,22 +210,14 @@
           });
   });
 
-  function showFeedback(message, classNames) {
-      const feedback = document.getElementById("feedback");
-      feedback.textContent = message;
-      feedback.className = classNames;
-      setTimeout(() => {
-          feedback.textContent = "";
-          feedback.className = ""; // Remove all classes
-      }, 3000); // Remove feedback after 3 seconds (3000 milliseconds)
-  }
+ 
   function showFeedback(message, isSuccess = true) {
       const feedbackElement = document.getElementById("feedback");
 
       // Set the message and style
       feedbackElement.innerText = message;
-      feedbackElement.style.color = isSuccess ? "blue" : "red"; // Blue for success, red for error
-      feedbackElement.style.borderColor = isSuccess ? "blue" : "red";
+      feedbackElement.style.color = isSuccess ? "lightblue" : "lightred"; // Blue for success, red for error
+      feedbackElement.style.borderColor = isSuccess ? "lightblue" : "lightred";
       feedbackElement.style.display = "block"; // Make it visible
 
       // Hide the feedback after 3 seconds

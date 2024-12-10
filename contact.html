@@ -177,7 +177,7 @@
                 </svg>
               </i>
               <div>
-                Titanium Business Park, C-806, Ahemedabad, Gujarat 380051
+                Titanium Business Park, C-806, Ahmedabad, Gujarat 380051
               </div>
             </div>
             <div class="image-container">
@@ -406,7 +406,7 @@
 
             <div class="contact-info">
               <span>
-                <a href="tel:+917874579457">+91 78745 79457</a>
+                <a href="tel:+917874579457"  class="black-link">+91 78745 79457</a>
               </span>
             </div>
           </div>
@@ -416,31 +416,57 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="About us.html">About Us</a></li>
               <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="RequestDemo.html">Request a demo</a></li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-6 footer-column">
-            <h3 class="footer-heading">Our Newsletter</h3>
+            <h3 class="footer-heading">Opportunity Awaits</h3>
             <p>
-              Subscribe to our newsletter to get our news & deals delivered to
-              you.
+              Boost your business with ease—request a quick callback from our expert team!
             </p>
-            <form class="newsletter-form mt-4">
+            <form id="footerform" class="newsletter-form mt-4" >
               <input
-                type="email"
-                class="newsletter-input"
-                placeholder="Email Address"
-                required
+                  type="tel"
+                  class="newsletter-input"
+                  placeholder="Phone Number"
+                  required
+                  id="phonenumberft"
               />
-              <button type="submit" class="newsletter-button">Join</button>
-            </form>
+              <button type="submit" class="btn newsletter-button">Submit</button>
+          </form>
+          
+          <div id="feedback" style="display: none; font-size: 14px; margin-top: 10px;"></div>
           </div>
         </div>
         <div class="copyright">
-          <p class="mb-0">© 2024 Unique It Solution. All rights reserved</p>
+          <p class="mb-0">© 2024 <span style="background: linear-gradient(0deg, rgba(1, 157, 224, 1) 0%, rgba(49, 63, 145, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;"> Ventas </span> Rights Reserved. Powered by <a href="https://theuniqueitsolution.com/" target="_blank"  style="
+    background: linear-gradient(0deg, rgba(1, 157, 224, 1) 0%, rgba(49, 63, 145, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;">Unique IT Solution</a></p>
         </div>
       </div>
     </footer>
+    
+<script>
+  const inputField = document.getElementById('newsletterInput');
 
+  inputField.addEventListener('input', () => {
+    inputField.value = inputField.value.replace(/[^0-9]/g, ''); // Removes non-numeric characters
+  });
+
+  function validateInput() {
+    if (inputField.value === '') {
+      alert('Please enter a valid number.');
+      return false; // Prevent form submission
+    }
+    return true;
+  }
+</script>
     <script src="./assets/js/custom.js"></script>
     <script src="./assets/js/email.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>

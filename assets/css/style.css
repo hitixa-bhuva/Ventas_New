@@ -292,7 +292,7 @@ h6 {
 
 .h1,
 h1 {
-    font-size: calc(1.27rem + .24vw)
+    font-size: 29px;
 }
 
 @media (min-width:1200px) {
@@ -338,7 +338,8 @@ h6 {
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    font-size: 20px;
 }
 
 abbr[title] {
@@ -32641,7 +32642,7 @@ blockquote.text-center.icon-top:before {
 .post-category {
     text-transform: uppercase;
     letter-spacing: .02rem;
-    font-size: .7rem;
+    font-size: 14px;
     font-weight: 700;
     color: #aab0bc
 }
@@ -35246,7 +35247,8 @@ form.dark-fields .form-control:focus {
     justify-content: center;
     font-size: 1rem;
     line-height: 1;
-    backface-visibility: hidden
+    backface-visibility: hidden;
+    background-color: #e0e9fa !important;
 }
 
 .btn-group-sm>.btn.btn-circle,
