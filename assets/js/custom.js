@@ -13,7 +13,6 @@
       successMessage.style.display = 'block';
       successMessage.classList.add('animate__animated', 'animate__fadeIn');
   
-      // After 3-4 seconds, hide the success message and show the form again
       setTimeout(() => {
         successMessage.style.display = 'none';
         formSections.style.display = 'block';

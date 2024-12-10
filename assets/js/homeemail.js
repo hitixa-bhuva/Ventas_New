@@ -12,8 +12,6 @@
       console.log("Phone Number Entered:", phonenumberfooter);
 
 
-    // Validate if the input is numeric
-     // Validate if the input is numeric
      if (!/^\d+$/.test(phonenumberfooter)) {
         // Show feedback for non-numeric input
         showFeedback("Invalid input! Only numbers are allowed.", false);
