@@ -13,12 +13,17 @@
 
 
     // Validate if the input is numeric
-    if (!/^\d{1,15}$/.test(phonenumberfooter)) {
-        // Show feedback for invalid input
-        showFeedback(
-            "Invalid input! Only numbers are allowed, and the number should be up to 15 digits.",
-            false
-        );
+     // Validate if the input is numeric
+     if (!/^\d+$/.test(phonenumberfooter)) {
+        // Show feedback for non-numeric input
+        showFeedback("Invalid input! Only numbers are allowed.", false);
+        return; // Stop further execution
+    }
+
+    // Validate if the number exceeds 15 digits
+    if (phonenumberfooter.length > 15) {
+        // Show feedback for exceeding 15 digits
+        showFeedback("Invalid input! The number should not exceed 15 digits.", false);
         return; // Stop further execution
     }
 
