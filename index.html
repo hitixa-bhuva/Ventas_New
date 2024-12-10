@@ -1461,7 +1461,6 @@
                 <p class="text-muted">We'll be in touch shortly with your demo details.</p>
               </div>
             </form>
-            
           </div>
         </div>
       </div>
@@ -1578,6 +1577,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="About us.html">About Us</a></li>
               <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="RequestDemo.html">Request a demo</a></li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-6 footer-column">
@@ -1586,15 +1586,18 @@
               Subscribe to our newsletter to get our news & deals delivered to
               you.
             </p>
-            <form class="newsletter-form mt-4">
+            <form id="footerform" class="newsletter-form mt-4">
               <input
-                type="email"
-                class="newsletter-input"
-                placeholder="Email Address"
-                required
+                  type="tel"
+                  class="newsletter-input"
+                  placeholder="Phone Number"
+                  required
+                  id="phonenumberft"
               />
-              <button type="submit" class="newsletter-button">Join</button>
-            </form>
+              <button type="submit" class="btn newsletter-button">Join</button>
+          </form>
+          
+          <div id="feedback" style="display: none; font-size: 14px; margin-top: 10px;"></div>
           </div>
         </div>
         <div class="copyright">
@@ -1631,9 +1634,10 @@
 
   <!-- JavaScript for Active Class -->
 
-       
     <script src="./assets/js/custom.js"></script>
     <script src="./assets/js/email.js"></script>
+    <script src="./assets/js/homeemail.js"></script>
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="./assets/js/plugins.js"></script>
