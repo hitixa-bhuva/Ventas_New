@@ -35169,7 +35169,8 @@ form.dark-fields .form-control:focus {
     justify-content: center;
     transform: translateY(0);
     letter-spacing: -.01rem;
-    position: relative
+    position: relative;
+    background-image: linear-gradient(135deg, #3f78e0, var(--secondary-color));
 }
 
 .btn:not(.btn-link):hover {
@@ -39958,7 +39959,6 @@ header {
 }
 
 .navbar.navbar-light.fixed .btn:not(.btn-expand):not(.btn-gradient) {
-    background: linear-gradient(0deg, rgba(1,157,224,1) 0%, rgba(49,63,145,1) 100%);
     border-color: linear-gradient(0deg, rgba(1,157,224,1) 0%, rgba(49,63,145,1) 100%);
     color: var(--bs-white)
 }
@@ -50429,7 +50429,6 @@ footer [class*=col-] .widget+.widget {
     right: 5px;
     top: 5px;
     padding: 8px 25px;
-    background-image: linear-gradient(0deg, rgba(1, 157, 224, 1) 0%, rgba(49, 63, 145, 1) 100%);;
     color: white;
     border: none;
     border-radius: 25px;
@@ -50507,7 +50506,7 @@ footer [class*=col-] .widget+.widget {
     box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
 }
 .container.contact-container .btn-send {
-    background-image: linear-gradient(0deg, rgba(1,157,224,1) 0%, rgba(49,63,145,1) 100%);
+    background-image: linear-gradient(135deg, #3f78e0, var(--secondary-color));
     color: white;
     padding: 12px 30px;
     border-radius: 8px;

@@ -1,5 +1,5 @@
 
-  // home page mail send book your demo now
+  // home page mail send footer mail send
   const footernumberform = document.getElementById("footerform");
 
   // Contact mail start
