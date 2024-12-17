@@ -31994,15 +31994,15 @@ blockquote.text-center.icon-top:before {
     padding-left: 1.5rem
 }
 
-.icon-list.bullet-soft-primary i {
+.icon-list.bullet-soft-primary svg {
     color: var(--bs-primary)
 }
 
-.icon-list.bullet-soft-primary.bullet-bg i {
+.icon-list.bullet-soft-primary.bullet-bg svg {
     background-color: var(--bs-bullet-soft-primary)
 }
 
-.icon-list.bullet-bg i[class*=bullet-soft-primary] {
+.icon-list.bullet-bg svg[class*=bullet-soft-primary] {
     background-color: var(--bs-bullet-soft-primary) !important;
     color: var(--bs-primary) !important
 }
@@ -32015,7 +32015,7 @@ blockquote.text-center.icon-top:before {
     background-color: var(--bs-bullet-soft-blue)
 }
 
-.icon-list.bullet-bg i[class*=bullet-soft-blue] {
+.icon-list.bullet-bg svg[class*=bullet-soft-blue] {
     background-color: var(--bs-bullet-soft-blue) !important;
     color: var(--bs-blue) !important
 }
@@ -32487,14 +32487,14 @@ blockquote.text-center.icon-top:before {
     color: var(--bs-primary) !important
 }
 
-.icon-list i {
+.icon-list svg {
     position: absolute;
     top: -.2rem;
     left: 0;
     font-size: 1rem
 }
 
-.icon-list.bullet-bg i {
+.icon-list.bullet-bg svg {
     border-radius: 100%;
     width: 1rem;
     height: 1rem;
@@ -32506,7 +32506,7 @@ blockquote.text-center.icon-top:before {
     display: table
 }
 
-.icon-list.bullet-bg i:before {
+.icon-list.bullet-bg svg:before {
     vertical-align: middle;
     display: table-cell;
     color: #0b8bd4;
@@ -32963,7 +32963,7 @@ mark.doc {
 }
 
 .terminal:before {
-    font-family: var(--bs-body-font-family);
+    font-family: Custom;
     content: "\e905";
     font-size: .8rem
 }
@@ -35080,7 +35080,7 @@ textarea {
 
 .search-form:before {
     content: "\eca5";
-    font-family: var(--bs-body-font-family);
+    font-family: Unicons;
     display: block;
     position: absolute;
     top: 50%;
@@ -40311,9 +40311,12 @@ button.hamburger:before {
         transition: none
     }
 }
+.accordion-wrapper .card-header button:before{
+    margin-top: -.2rem
+}
 
 .accordion-wrapper .card-header button:before {
-    font-family: var(--bs-body-font-family);
+    font-family: Custom;
     position: absolute;
     left: 1.3rem;
     content: "\e932";
@@ -40322,7 +40325,7 @@ button.hamburger:before {
     width: 1rem;
     margin-top: -.25rem;
     margin-left: -.3rem;
-    display: inline-block;
+    display: none;
     color: var(--bs-blue);
 }
 
@@ -40372,7 +40375,7 @@ button.hamburger:before {
 }
 
 .collapse-link:before {
-    font-family: var(--bs-body-font-family);
+    font-family: Custom;
     content: "\e932";
     font-size: 1.15rem;
     font-weight: 400;
@@ -40428,7 +40431,7 @@ button.hamburger:before {
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-    font-family: var(--bs-body-font-family);
+    font-family: Custom;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -40968,7 +40971,7 @@ button.hamburger:before {
 
 .progress-wrap:after {
     position: absolute;
-    font-family: var(--bs-body-font-family);
+    font-family: Unicons;
     content: "\e951";
     text-align: center;
     line-height: 2.3rem;
@@ -42260,12 +42263,12 @@ img.svg-inject {
 
 [class*=" uil-"],
 [class^=uil-] {
-    font-family: var(--bs-body-font-family);
+    font-family: Unicons !important
 }
 
 [class*=" icn-"],
 [class^=icn-] {
-    font-family: var(--bs-body-font-family);
+    font-family: Unicons !important
 }
 
 .icn-caret-right:before {
@@ -51176,4 +51179,15 @@ footer [class*=col-] .widget+.widget {
 
   }
 
+  button.accordion-button::after {
+    content: '\25B6'; /* Right-pointing arrow */
+    font-size: 1rem;
+    margin-left: auto; /* Pushes arrow to the right */
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  
+  button.accordion-button:not(.collapsed)::after {
+    transform: rotate(90deg); /* Rotates arrow when expanded */
+  }
   
