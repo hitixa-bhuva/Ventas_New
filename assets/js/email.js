@@ -182,8 +182,8 @@ bookingformemailForm.addEventListener("submit", function (event) {
   const email = document.querySelector('input[placeholder="name@example.com"]').value;
   const phone = document.querySelector('input[placeholder="Phone Number"]').value;
   const company = document.querySelector('input[placeholder="Company Name"]').value;
-  const teamSizeElement = document.querySelector('#teamSize');
-  const dateTime = document.querySelector('#dateTime');
+  const teamSize = document.querySelector('#teamSize').value; // Correctly get the selected value
+  const dateTime = document.querySelector('#dateTime').value;
   const message = document.querySelector('textarea[placeholder="Your Message"]').value;
 
   // Hardcoded subject
@@ -356,12 +356,12 @@ bookingformemailForm.addEventListener("submit", function (event) {
                     <td>${company}</td>
                 </tr>
                 <tr>
-                    <th>Team Size:</th>
-                    <td>${teamSize}</td>
+                  <th>Team Size:</th>
+                  <td>${teamSize}</td>
                 </tr>
                 <tr>
-                    <th>Date & Time:</th>
-                    <td>${dateTime}</td>
+                  <th>Date & Time:</th>
+                  <td>${dateTime}</td>
                 </tr>
                 <tr>
                     <th>Description:</th>
@@ -406,23 +406,23 @@ bookingformemailForm.addEventListener("submit", function (event) {
       document.querySelector('input[placeholder="email"]').value = "";
       document.querySelector('input[placeholder="phone"]').value = "";
       document.querySelector('input[placeholder="company"]').value = "";
-      document.querySelector('input[placeholder="teamSize"]').value = "";
-      document.querySelector('textarea[placeholder="dateTime"]').value = "";
+      const teamSize = document.querySelector('#teamSize').value; // Correctly get the selected value
+      const dateTime = document.querySelector('#dateTime').value;
       document.querySelector('textarea[placeholder="message"]').value = "";
-      showFeedback("Message sent successfully", "text-primary", true);
+      showFormFeedback("Message sending failed. Please try again late", "text-primary", true);
 
     })
     .catch((error) => {
       console.error("Error sending email:", error);
-      showFeedback(
-        "Message sending failed. Please try again later.",
+      showFormFeedback(
+        "Message sent successfully.",
         "text-danger"
       );
     });
 });
 
-function showFeedback(message, classNames) {
-  const feedback = document.getElementById("feedback");
+function showFormFeedback(message, classNames) {
+  const feedback = document.getElementById("feedbackMessage");
   feedback.textContent = message;
   feedback.className = classNames;
   setTimeout(() => {
@@ -430,8 +430,8 @@ function showFeedback(message, classNames) {
     feedback.className = ""; // Remove all classes
   }, 3000); // Remove feedback after 3 seconds (3000 milliseconds)
 }
-function showFeedback(message, isSuccess = true) {
-  const feedbackElement = document.getElementById("feedback");
+function showFormFeedback(message, isSuccess = true) {
+  const feedbackElement = document.getElementById("feedbackMessage");
 
   // Set the message and style
   feedbackElement.innerText = message;
@@ -445,3 +445,25 @@ function showFeedback(message, isSuccess = true) {
   }, 3000);
 }
 // sd
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dateTimeInput = document.getElementById('dateTime');
+  
+  // Get current date and time
+  const now = new Date();
+  
+  // Extract the date and time components
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0'); // Month is 0-based
+  const day = String(now.getDate()).padStart(2, '0');
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  
+  // Format current date and time as YYYY-MM-DDThh:mm
+  const currentDateTime = `${year}-${month}-${day}T${hours}:${minutes}`;
+  
+  // Set the min attribute to current date and time
+  dateTimeInput.setAttribute('min', currentDateTime);
+});
+

@@ -11,7 +11,7 @@ echo
             solutions.
           </p>
           <div class="social-links">
-            <a href="https://wa.me/917874579457" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/919624842246" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp"
                 viewBox="0 0 16 16">
                 <path
@@ -61,7 +61,7 @@ echo
 
           <div class="contact-info">
             <span>
-              <a href="tel:+917874579457" class="black-link">+91 78745 79457</a>
+              <a href="tel:+919426842246" class="black-link">+91 96248 42246</a>
             </span>
           </div>
         </div>

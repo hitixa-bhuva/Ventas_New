@@ -48,7 +48,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
                         </a>
                     </li>
                     <li>
-                        <a href="Accommodation" class="py-4">
+                        <a href="About" class="py-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-info-circle-fill" viewBox="0 0 16 16">
                                 <path
@@ -59,7 +59,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
                     </li>
 
                     <li>
-                        <a href="Package" class="py-4">
+                        <a href="Contact    " class="py-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-text-fill" viewBox="0 0 16 16">
                                 <path
@@ -68,7 +68,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
                             Contact Us</a>
                     </li>
                     <li>
-                        <a href="Gallery" class="py-4">
+                        <a href="RequestDemo" class="py-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-info-circle-fill" viewBox="0 0 16 16">
                                 <path

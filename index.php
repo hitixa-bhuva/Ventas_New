@@ -299,7 +299,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
   <!-- don't warry -->
 
   <!-- How It Works -->
-  <section>
+  <!-- <section>
     <div class="container pt-md-5">
       <div class="row text-center">
         <div class="col-md-10 col-lg-7 mx-auto position-relative">
@@ -331,7 +331,6 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
                   Manual lead assignment can result in mistakes and missed opportunities.
                 </p>
               </div>
-              <!-- /div -->
               <div class="mb-8">
                 <span class="fs-60 lh-1 mb-3 fw-normal text-gradient gradient-7">02</span>
                 <h3 class="stuck-manual-process">Data Security Risks</h3>
@@ -346,7 +345,6 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
                   Without a centralized communication record, tracking past interactions with leads becomes challenging.
                 </p>
               </div>
-              <!-- /div -->
             </div>
 
             <div class="col-md-6 col-lg-4">
@@ -357,7 +355,6 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
                   Without real-time updates, there is a risk of lead duplication or oversight.
                 </p>
               </div>
-              <!-- /div -->
               <div class="mb-8">
                 <span class="fs-60 lh-1 mb-3 fw-normal text-gradient gradient-7">05</span>
                 <h3 class="stuck-manual-process">Role Clarity Issues</h3>
@@ -372,7 +369,6 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
                   Without organized records, follow-ups may be inconsistent, impacting lead engagement.
                 </p>
               </div>
-              <!-- /div -->
             </div>
 
           </div>
@@ -382,7 +378,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
       </div>
 
     </div>
-  </section>
+  </section> -->
   <!-- How It Works -->
 
   <!-- Latest Projects -->
@@ -871,7 +867,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
   <!-- Need Customization -->
 
   <!-- faq section -->
-  <section class="wrapper image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600 bg-content pt-10 pb-15"
+  <section class="wrapper image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600 bg-content pt-10 pb-15 mt-7"
     style="background-color: #f8e7ec;">
     <div class="blur-bg" style="left: 10%; top: 20%;"></div>
     <div class="blur-bg" style="left: 60%; top: 40%;"></div>
@@ -1142,7 +1138,8 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
               <p class="text-muted">We'll be in touch shortly with your demo details.</p>
             </div>
           </form>
-        </div>
+          <div id="feedbackMessage" style="display: none; font-size: 14px; margin-top: 10px;"></div>
+          </div>
       </div>
     </div>
   </section>
