@@ -1553,8 +1553,8 @@
 
             <div class="contact-info">
               <span>
-                <a href="mailto:info@theuniqueitsolution.com" class="black-link"
-                  >info@theuniqueitsolution.com</a
+                <a href="mailto:info@theventas.com" class="black-link"
+                  >info@theventas.com</a
                 >
               </span>
             </div>

@@ -3,8 +3,8 @@ require 'smtp/PHPMailerAutoload.php';
 
 class SendMail
 {
-    public $SenderEmail = "hitixa.bhuva@theuniqueitsolution.com";
-    public $SenderEmailPassword = "htitxa@123455";
+    public $SenderEmail = "website@theventas.com";
+    public $SenderEmailPassword = "PM*Ft7#b2@";
     public $ReciverEmail = "hitixa.bhuva@theuniqueitsolution.com";
     public $Subject = "";
     public $Body = "hello";
@@ -15,13 +15,12 @@ class SendMail
         $subject = isset($inputData['Subject']) ? $inputData['Subject'] : '';
         $body = isset($inputData['Body']) ? $inputData['Body'] : '';
 
-
         $mail = new PHPMailer();
         $mail->SMTPDebug = 0; // Change to 3 for detailed debug output
         $mail->isSMTP();
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'tls';
-        $mail->Host = "216.10.241.228";
+        $mail->Host = "smtp.gmail.com";
         $mail->Port = 587;
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
@@ -32,6 +31,8 @@ class SendMail
         $mail->Body = $body;
         $mail->addAddress($this->ReciverEmail);
 
+
+        
         // Optional: Configure SSL options
         $mail->SMTPOptions = [
             'ssl' => [

@@ -90,7 +90,7 @@
       
                 <div class="offcanvas-footer d-lg-none">
                   <div>
-                    <a class="link-inverse">info@theuniqueitsolution.com</a>
+                    <a class="link-inverse">info@theventas.com</a>
                     <br> +91 78745 79457 <br>
                     <nav class="nav social social-white mt-4">
                       <!-- Social Links Here -->
@@ -570,8 +570,8 @@
 
             <div class="contact-info">
               <span>
-                <a href="mailto:info@theuniqueitsolution.com" class="black-link"
-                  >info@theuniqueitsolution.com</a
+                <a href="mailto:info@theventas.com" class="black-link"
+                  >info@theventas.com</a
                 >
               </span>
             </div>

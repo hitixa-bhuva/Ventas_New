@@ -51068,6 +51068,8 @@ footer [class*=col-] .widget+.widget {
     font-weight: bold;        /* Make the text bold */
     font-size: 16px;          /* Increase font size for readability */
   }
+  
+
   .icon-scroll {
     width: 24px;
     height: 44px;

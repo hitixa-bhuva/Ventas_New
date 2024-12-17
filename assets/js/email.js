@@ -3,7 +3,7 @@ const emailForm = document.querySelector("form");
 // Contact mail start
 emailForm.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent the form from submitting normally
-  console.log("helo")
+
 
   // Gather data from the form - updated selectors to match new HTML
   const name = document.querySelector('input[placeholder="Name"]').value;
@@ -16,8 +16,8 @@ emailForm.addEventListener("submit", function (event) {
   // Create email data
   const emailData = {
     Host: "216.10.241.228",
-    SenderEmail: "hitixa.bhuva@theuniqueitsolution.com",
-    SenderEmailPassword: "htitxa@123455",
+    SenderEmail: "website@theventas.com",
+    SenderEmailPassword: "PM*Ft7#b2@",
     ReciverEmail: "hitixa.bhuva@theuniqueitsolution.com",
     Subject: subject,
     Body: `
