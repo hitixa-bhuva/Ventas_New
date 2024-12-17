@@ -46,20 +46,23 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
             </div>
           </div>
           <div class="col-lg-6">
-            <h2 class="display-4 mb-3">Changing the <span class="text-gradient gradient-7 gradient-font"> Leads</span> Process</h2>
-            <p class="lead fs-lg">Transforming Lead Management for Exporters and Traders</p>
-            <p class="mb-6">At Ventas, we’re revolutionizing how ceramic exporters and traders handle their leads. By streamlining processes, our CRM empowers businesses to focus on what truly matters—building connections and closing deals.</p>
+            <h2 class="display-4 mb-3">Revolutionizing Lead Management for <span class="text-gradient gradient-7 gradient-font"> traders</span>  and  <span class="text-gradient gradient-7 gradient-font"> exporter</span> 
+            Process</h2>
+            <p class="lead fs-lg">Empowering Growth, Streamlining Sales, and Unlocking Potential</p>
+            <p class="mb-6">At Ventas, our mission is to revolutionize lead management for ceramic manufacturers in Morbi and beyond. We’ve designed a CRM to help track, nurture, and convert leads into lasting business relationships, simplifying the process and driving sustainable growth.</p>
             <div class="row gy-3 gx-xl-8">
               <div class="col-xl-6">
                 <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
-                  <li><span><i class="uil uil-check"></i></span><span>Automated Lead Tracking and Management.</span></li>
-                  <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Customizable Dashboards for Industry-Specific Insights.</span></li>
+                  <li><span><i class="uil uil-check"></i></span><span>End-to-End Lead Tracking: Monitor leads from generation to conversion in one system.</span></li>
+                  <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Smart Automation: Automate follow-ups and reminders to never miss a lead.
+                  </span></li>
                 </ul>
               </div>
               <div class="col-xl-6">
                 <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
-                  <li><span><i class="uil uil-check"></i></span><span>Seamless Workflow Automation for Lead Conversion.</span></li>
-                  <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Comprehensive Analytics for Data-Driven Decisions.</span></li>
+                  <li><span><i class="uil uil-check"></i></span><span>Data-Driven Insights: Use real-time analytics to optimize sales and strategies.</span></li>
+                  <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Tailored for Ceramic Manufacturers: Custom-built for the unique needs of ceramic businesses.
+                  </span></li>
                 </ul>
               </div>
             </div>
@@ -68,6 +71,63 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
       </div>
     </section>
     
+    <!-- WHAT DO WE DO -->
+    <section class="wrapper bg-gray position-relative min-vh-60 d-lg-flex align-items-center">
+      <div class="col-lg-6 position-lg-absolute top-0 start-0 image-wrapper bg-image bg-cover h-100" data-image-src="./assets/img/photos/bg38.jpg" style="background-image: url(./assets/img/);">
+        <div class="divider text-gray divider-v-end d-none d-lg-block">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 54 1200">
+            <g></g>
+            <g>
+              <g>
+                <polygon fill="currentColor" points="48 0 0 0 48 1200 54 1200 54 0 48 0"></polygon>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <!--/column -->
+      <div class="container">
+        <div class="row gx-0">
+          <div class="col-lg-6 ms-auto">
+            <div class="pt-13 pb-15 pb-md-17 py-lg-16 ps-lg-15 pe-xxl-16">
+              <h2 class="fs-15 text-uppercase text-muted mb-3">How It Works?</h2>
+              <h3 class="display-3 ls-sm mb-7">Redefining Business Efficiency with High-Quality Custom Software
+              </h3>
+              <div class="d-flex flex-row mb-5">
+                <div>
+                  <img src="assets/img/icons/lineal/light-bulb.svg" class="svg-inject icon-svg icon-svg-md text-blue me-5 mt-1" alt="">
+                </div>
+                <div>
+                  <h4 class="fs-20 ls-sm">Collect Ideas</h4>
+                  <p class="mb-0">Nulla vitae elit libero pharetra augue dapibus. Praesent commodo cursus.</p>
+                </div>
+              </div>
+              <div class="d-flex flex-row mb-5">
+                <div>
+                  <img src="assets/img/icons/lineal/pie-chart-2.svg" class="svg-inject icon-svg icon-svg-md text-green me-5 mt-1" alt="">
+                </div>
+                <div>
+                  <h4 class="fs-20 ls-sm">Data Analysis</h4>
+                  <p class="mb-0">Vivamus sagittis lacus vel augue laoreet. Etiam porta sem malesuada magna.</p>
+                </div>
+              </div>
+              <div class="d-flex flex-row">
+                <div>
+                  <img src="assets/img/icons/lineal/design.svg" class="svg-inject icon-svg icon-svg-md text-yellow me-5 mt-1" alt="">
+                </div>
+                <div>
+                  <h4 class="fs-20 ls-sm">Magic Touch</h4>
+                  <p class="mb-0">Cras mattis consectetur purus sit amet. Aenean lacinia bibendum nulla sed.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </section>
     <!-- Our Commitment to You -->
     <section class="container wrapper bg-light angled upper-end lower-end mt-15">
       <div class="row gx-lg-8 gx-xl-12 gy-10 mb-10 mb-md-10 align-items-center">
@@ -77,9 +137,9 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
         </div>
         <!--/column -->
         <div class="col-lg-6">
-          <h2 class="display-4 mb-3">Our <span class="text-gradient gradient-7 gradient-font">Commitment</span> to You</h2>
-          <p class="lead fs-lg">Your Growth, <span class="underline"> Our Priority</span> </p>
-          <p class="mb-6">At Ventas, we are more than just a CRM provider—we are your partner in success. Our commitment lies in empowering ceramic exporters with tools that simplify operations, strengthen relationships, and drive sustainable growth.</p>
+          <h2 class="display-4 mb-3">Our <span class="text-gradient gradient-7 gradient-font">Commitment</span> to Your <span class="text-gradient gradient-7 gradient-font">Growth</span>  and <span class="text-gradient gradient-7 gradient-font">Success</span></h2>
+          <p class="lead fs-lg">Powerful, Simple Solutions to Drive Your Sales Potential</p>
+          <p class="mb-6">At Ventas, we are not just a CRM provider; we are your trusted partner in achieving business success. Our goal is to deliver a simple-to-use yet powerful tool that empowers exporters and traders by streamlining lead management, enhancing sales processes, and unlocking the full potential of their business. With a feature-loaded platform designed for ease of use and maximum impact, we are committed to helping you achieve real sales growth and operational excellence.</p>
           <div class="row gx-xl-10 gy-6">
             <div class="col-md-12">
               <div class="d-flex flex-row">
@@ -88,7 +148,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
                 </span>
                 <div>
                   <h4 class="mb-1">Our Mission</h4>
-                  <p class="mb-0">To simplify lead management for ceramic exporters and traders, enabling them to thrive in a competitive global market.</p>
+                  <p class="mb-0">To redefine lead management and drive sales growth for ceramic exporters and traders, providing them with the tools they need to manage leads effortlessly and unlock their business's full potential in a competitive global market.</p>
                 </div>
               </div>
             </div>
@@ -100,9 +160,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
                 </div>
                 <div>
                   <h4 class="mb-1">Our Vision</h4>
-                  <p class="mb-0">To become the most trusted CRM solution for the ceramic industry, driving innovation and business growth.
-    
-                  </p>
+                  <p class="mb-0">To set a benchmark of trust and legacy for the ceramic industry, becoming the go-to CRM solution for ceramic manufacturers and exporters who strive for growth, efficiency, and long-term success.</p>
                 </div>
               </div>
             </div>
