@@ -374,7 +374,7 @@ bookingformemailForm.addEventListener("submit", function (event) {
         <div class="email-footer">
             <p>© 2024 Ventas Rights Reserved. Powered by Unique IT Solution</p>
             <div class="footer-links">
-                <a href="https://theventas.com/contact.html">Contact Us</a>
+                <a href="https://theventas.com/Contact">Contact Us</a>
                 <a href="https://theventas.com/">Website</a>
             </div>
         </div>

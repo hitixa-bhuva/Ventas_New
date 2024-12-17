@@ -5,18 +5,14 @@ Header always set Content-Security-Policy "upgrade-insecure-requests"
 
 
 # Define custom error pages
-ErrorDocument 404 /404NotFound.php
-ErrorDocument 500 /404NotFound.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /404.php
 
 # Rewrite rules for clean URLs
 RewriteRule ^Home$ index.php [L]
-RewriteRule ^Accommodation$ accommodation.php [L]   
-RewriteRule ^Aplinetentdetails$ aplinetentdetails.php [L]
-RewriteRule ^Beytdwarkamandir$ Beytdwarkamandir.php [L]
-RewriteRule ^BeytDwarkaParikrama$ BeytDwarkaParikrama.php [L]
-RewriteRule ^Contact$ contact.php [L]  
+RewriteRule ^About$ About us.php [L]   
+RewriteRule ^Contact$ contact.php [L]
+RewriteRule ^RequestDemo$ RequestDemo.php [L]
 RewriteRule ^SiteMap$ sitemap.php [L]  
 
 
-
-# RewriteRule ^Natural Sesame Seeds natural-sesame-seeds.php [L]  
