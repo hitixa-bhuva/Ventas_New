@@ -444,7 +444,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: var(--bs-font-monospace);
+    font-family: var(--bs-body-font-family);
     font-size: 1em
 }
 
@@ -541,7 +541,7 @@ optgroup,
 select,
 textarea {
     margin: 0;
-    font-family: inherit;
+    font-family: var(--bs-body-font-family);
     font-size: inherit;
     line-height: inherit
 }
@@ -4863,7 +4863,7 @@ textarea.form-control.is-invalid {
     --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
     display: inline-block;
     padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
-    font-family: var(--bs-btn-font-family);
+    font-family: var(--bs-body-font-family);
     font-size: var(--bs-btn-font-size);
     font-weight: var(--bs-btn-font-weight);
     line-height: var(--bs-btn-line-height);
@@ -5876,7 +5876,7 @@ fieldset:disabled .btn {
 }
 
 .dropdown-toggle::after {
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     display: inline-block;
     margin-left: .05rem;
     vertical-align: -3px;
@@ -6066,7 +6066,7 @@ fieldset:disabled .btn {
 }
 
 .dropup .dropdown-toggle::after {
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     display: inline-block;
     margin-left: .05rem;
     vertical-align: -3px;
@@ -6089,7 +6089,7 @@ fieldset:disabled .btn {
 }
 
 .dropend .dropdown-toggle::after {
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     display: inline-block;
     margin-left: .05rem;
     vertical-align: -3px;
@@ -6116,7 +6116,7 @@ fieldset:disabled .btn {
 }
 
 .dropstart .dropdown-toggle::after {
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     display: inline-block;
     margin-left: .05rem;
     vertical-align: -3px;
@@ -13881,9 +13881,6 @@ fieldset:disabled .btn {
     column-gap: 22.5rem !important
 }
 
-.font-monospace {
-    font-family: var(--bs-font-monospace) !important
-}
 
 .fst-italic {
     font-style: italic !important
@@ -30055,7 +30052,7 @@ a.text-reset:hover {
 
 .more:after {
     line-height: 1;
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     content: "\e94c";
     padding-left: .05rem;
     font-size: .9rem;
@@ -32819,7 +32816,7 @@ article .post-meta li.ms-auto:before {
 }
 
 .code-wrapper .btn-clipboard {
-    font-family: Manrope, sans-serif;
+    font-family: sans-serif;
     position: absolute;
     top: .5rem;
     right: .5rem;
@@ -32861,7 +32858,7 @@ pre[class*=language-] {
 .kbd,
 .terminal,
 mark.doc {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: var(--bs-body-font-family);
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -32900,7 +32897,7 @@ mark.doc {
     margin-right: .4rem;
     text-align: center;
     color: inherit;
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     font-size: .7rem;
     border-radius: .2rem;
     border-top-right-radius: 0;
@@ -32946,7 +32943,7 @@ mark.doc {
 }
 
 .external:after {
-    font-family: Custom;
+    font-family: var(--bs-body-font-family);
     content: "\e906";
     font-size: .7rem
 }
@@ -32966,7 +32963,7 @@ mark.doc {
 }
 
 .terminal:before {
-    font-family: Custom;
+    font-family: var(--bs-body-font-family);
     content: "\e905";
     font-size: .8rem
 }
@@ -35083,7 +35080,7 @@ textarea {
 
 .search-form:before {
     content: "\eca5";
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     display: block;
     position: absolute;
     top: 50%;
@@ -40316,7 +40313,7 @@ button.hamburger:before {
 }
 
 .accordion-wrapper .card-header button:before {
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     position: absolute;
     left: 1.3rem;
     content: "\e932";
@@ -40375,7 +40372,7 @@ button.hamburger:before {
 }
 
 .collapse-link:before {
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     content: "\e932";
     font-size: 1.15rem;
     font-weight: 400;
@@ -40431,7 +40428,7 @@ button.hamburger:before {
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -40971,7 +40968,7 @@ button.hamburger:before {
 
 .progress-wrap:after {
     position: absolute;
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     content: "\e951";
     text-align: center;
     line-height: 2.3rem;
@@ -41033,7 +41030,7 @@ button.hamburger:before {
 
 .btn-close:before {
     background: rgba(0, 0, 0, .08);
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     font-size: 1.05rem;
     content: "\ed3b";
     width: 1.8rem;
@@ -41194,7 +41191,7 @@ button.hamburger:before {
 }
 
 .swiper-controls .swiper-navigation .swiper-button:after {
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     font-size: 1.2rem
 }
 
@@ -42232,7 +42229,7 @@ img.svg-inject {
 }
 
 @font-face {
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     src: url(../fonts/unicons/Unicons.woff2) format("woff2"), url(../fonts/unicons/Unicons.woff) format("woff");
     font-weight: 400;
     font-style: normal;
@@ -42240,7 +42237,7 @@ img.svg-inject {
 }
 
 @font-face {
-    font-family: Custom;
+    font-family: var(--bs-body-font-family);
     src: url(../fonts/custom/Custom.woff2) format("woff2"), url(../fonts/custom/Custom.woff) format("woff");
     font-weight: 400;
     font-style: normal;
@@ -42263,12 +42260,12 @@ img.svg-inject {
 
 [class*=" uil-"],
 [class^=uil-] {
-    font-family: Unicons !important
+    font-family: var(--bs-body-font-family);
 }
 
 [class*=" icn-"],
 [class^=icn-] {
-    font-family: Custom !important
+    font-family: var(--bs-body-font-family);
 }
 
 .icn-caret-right:before {
@@ -47718,7 +47715,7 @@ figure.overlay img {
 
 .glightbox-clean .gnext:before,
 .glightbox-clean .gprev:before {
-    font-family: Unicons
+    font-family: var(--bs-body-font-family);
 }
 
 .glightbox-clean .gnext:hover,
@@ -47741,7 +47738,7 @@ figure.overlay img {
 }
 
 .glightbox-clean .gclose:after {
-    font-family: Unicons;
+    font-family: var(--bs-body-font-family);
     content: "\ed3b"
 }
 
@@ -49307,7 +49304,7 @@ footer [class*=col-] .widget+.widget {
 
 #comments ul.children li.comment:before {
     display: block;
-    font-family: Custom;
+    font-family: var(--bs-body-font-family);
     content: "\e904";
     font-size: calc(1.325rem + .9vw);
     position: absolute;
@@ -51063,7 +51060,7 @@ footer [class*=col-] .widget+.widget {
 }
 .hero-section-h1-tag{
     font-size: 47px; 
-    font-family:  system-ui, -apple-system, Segoe UI;
+    font-family: var(--bs-body-font-family);
 }
 @media (max-width: 770px) {
     .hero-section-h1-tag{
