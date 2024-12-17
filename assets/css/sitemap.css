@@ -92,14 +92,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 * {
 	box-sizing: border-box;
 }
-body {
-	font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
-	background: white;
-	color: black;
-	font-size: 16px;
-	line-height: 1;
-	/* padding: 2em; */
-}
+
 .sitemap {
 	margin: 0 0 2em 0;
 }

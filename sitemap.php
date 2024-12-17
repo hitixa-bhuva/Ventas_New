@@ -82,7 +82,6 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 </div>
 
 
-
 <!-- navbar -->
 <script src="./assets/js/custm.js"></script>
 <!-- navbar -->
