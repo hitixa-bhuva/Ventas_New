@@ -812,7 +812,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
               <a href="RequestDemo" class="btn text-white  rounded">Request Call Back</a>
             </div>
           </div>
-          <!--/.pricing -->
+
         </div>
         <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
           <div class="pricing card shadow-lg text-center">
