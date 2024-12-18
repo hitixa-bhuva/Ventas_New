@@ -17,7 +17,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-weight: inherit;
 	font-style: inherit;
 	font-size: 100%;
-	font-family: inherit;
 	vertical-align: baseline;
 }
 
@@ -93,7 +92,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	box-sizing: border-box;
 }
 body {
-	font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
 	background: white;
 	color: black;
 	font-size: 16px;
