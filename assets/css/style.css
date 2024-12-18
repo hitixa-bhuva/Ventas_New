@@ -4583,7 +4583,11 @@ textarea.form-control-lg {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0
 }
-
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-showFormFeedback):not(.invalid-tooltip):not(.invalid-showFormFeedback) {
+    margin-left: calc(1px * -1);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
 .input-group>.form-floating:not(:first-child)>.form-control,
 .input-group>.form-floating:not(:first-child)>.form-select {
     border-top-left-radius: 0;
@@ -4591,6 +4595,13 @@ textarea.form-control-lg {
 }
 
 .valid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .7rem;
+    color: var(--bs-form-valid-color)
+}
+.valid-showFormFeedback {
     display: none;
     width: 100%;
     margin-top: .25rem;
@@ -4615,6 +4626,12 @@ textarea.form-control-lg {
 .is-valid~.valid-feedback,
 .is-valid~.valid-tooltip,
 .was-validated :valid~.valid-feedback,
+.was-validated :valid~.valid-tooltip {
+    display: block
+}
+.is-valid~.valid-showFormFeedback,
+.is-valid~.valid-tooltip,
+.was-validated :valid~.valid-showFormFeedback,
 .was-validated :valid~.valid-tooltip {
     display: block
 }
@@ -4690,7 +4707,9 @@ textarea.form-control.is-valid {
 .form-check-inline .form-check-input~.valid-feedback {
     margin-left: .5em
 }
-
+.form-check-inline .form-check-input~.valid-showFormFeedback {
+    margin-left: .5em
+}
 .input-group>.form-control:not(:focus).is-valid,
 .input-group>.form-floating:not(:focus-within).is-valid,
 .input-group>.form-select:not(:focus).is-valid,
@@ -4707,7 +4726,13 @@ textarea.form-control.is-valid {
     font-size: .7rem;
     color: var(--bs-form-invalid-color)
 }
-
+.invalid-showFormFeedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .7rem;
+    color: var(--bs-form-invalid-color)
+}
 .invalid-tooltip {
     position: absolute;
     top: 100%;
@@ -4728,7 +4753,12 @@ textarea.form-control.is-valid {
 .was-validated :invalid~.invalid-tooltip {
     display: block
 }
-
+.is-invalid~.invalid-showFormFeedback,
+.is-invalid~.invalid-tooltip,
+.was-validated :invalid~.invalid-showFormFeedback,
+.was-validated :invalid~.invalid-tooltip {
+    display: block
+}
 .form-control.is-invalid,
 .was-validated .form-control:invalid {
     border-color: var(--bs-form-invalid-border-color);
@@ -4800,7 +4830,9 @@ textarea.form-control.is-invalid {
 .form-check-inline .form-check-input~.invalid-feedback {
     margin-left: .5em
 }
-
+.form-check-inline .form-check-input~.invalid-showFormFeedback {
+    margin-left: .5em
+}
 .input-group>.form-control:not(:focus).is-invalid,
 .input-group>.form-floating:not(:focus-within).is-invalid,
 .input-group>.form-select:not(:focus).is-invalid,
@@ -35228,16 +35260,17 @@ form.dark-fields .form-control:focus {
     margin-left: .15rem
 }
 
-.btn.btn-block .number {
+.btn-block .number {
     display: table-cell;
     text-align: center;
     margin: 0 auto;
     vertical-align: middle;
     font-size: 1.1rem;
-    font-weight: 700
+    font-weight: 700;
+    
 }
 
-.btn.btn-circle {
+.btn-circle {
     padding: 0;
     border-radius: 100% !important;
     width: 2.2rem;
@@ -35249,10 +35282,11 @@ form.dark-fields .form-control:focus {
     line-height: 1;
     backface-visibility: hidden;
     background-color: #e0e9fa !important;
+    color: #019de0;
 }
 
-.btn-group-sm>.btn.btn-circle,
-.btn.btn-circle.btn-sm {
+.btn-group-sm>.btn-circle,
+.btn-circle.btn-sm {
     width: 1.8rem;
     height: 1.8rem;
     font-size: .8rem
@@ -44216,7 +44250,9 @@ img.svg-inject {
 .uil-feedback:before {
     content: "\eaea"
 }
-
+.uil-showFormFeedback:before {
+    content: "\eaea"
+}
 .uil-fidget-spinner:before {
     content: "\eaeb"
 }
@@ -51069,6 +51105,17 @@ footer [class*=col-] .widget+.widget {
     font-size: 16px;          /* Increase font size for readability */
   }
   
+  #feedbackMessage {
+  padding: 10px 20px 10px 20px;  /* Add some padding for better spacing */
+  border: 2px solid blue;   /* Blue border */
+  border-radius: 5px;       /* Optional: Rounded corners */
+  text-align: center;       /* Center the text horizontally */
+  margin: 10px auto;        /* Center the container and add spacing */
+  width: fit-content;       /* Adjust width to fit content */
+  color: blue;              /* Text color blue for consistency */
+  font-weight: bold;        /* Make the text bold */
+  font-size: 16px;          /* Increase font size for readability */
+}
 
   .icon-scroll {
     width: 24px;

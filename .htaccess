@@ -10,7 +10,7 @@ ErrorDocument 500 /404.php
 
 # Rewrite rules for clean URLs
 RewriteRule ^Home$ index.php [L]
-RewriteRule ^About$ About us.php [L]   
+RewriteRule ^About$ AboutUs.php [L]   
 RewriteRule ^Contact$ contact.php [L]
 RewriteRule ^RequestDemo$ RequestDemo.php [L]
 RewriteRule ^SiteMap$ sitemap.php [L]  
