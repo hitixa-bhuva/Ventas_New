@@ -2,6 +2,23 @@
 	Reset Styles
 ------------------------------------------------------------ */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
 
 .primaryNav li a,
 .primaryNav li a.multi:after {
@@ -15,7 +32,7 @@
 	white-space: normal;
 	color: #333;
 	background-color: white;
-	border: 1px solid #3f78e0;
+	border: 1px solid #2293A7;
 	/* border-bottom: 4px solid #e82808; */
     z-index: 1;
 }
@@ -23,7 +40,7 @@
 .primaryNav li a {
 	-webkit-box-shadow: 1px 1px 2px rgba(106,113,127,0.2);
     -moz-box-shadow: 1px 1px 2px rgba(106,113,127,0.2);
-    box-shadow: 4px 4px  #3f78e0; 
+    box-shadow: 4px 4px  #2293A7; 
 	text-decoration: none;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -74,7 +91,13 @@
 * {
 	box-sizing: border-box;
 }
-
+body {
+	background: white;
+	color: black;
+	font-size: 16px;
+	line-height: 1;
+	/* padding: 2em; */
+}
 .sitemap {
 	margin: 0 0 2em 0;
 }
@@ -99,12 +122,7 @@
 .primaryNav {
 	clear: both;
 	width: 100%;
-	margin-top: 4em;
-}
-.sitemap-text{
-	font-size: 30px;
-    font-weight: 700;
-    color: #3f78e0;
+	margin-top: 10em;
 }
 @media screen and (max-width: 430px) {
 	.primaryNav{
@@ -168,7 +186,7 @@
 
 /* -------- Second Level --------- */
 .site-header{
-	color: #3f78e0;
+	color: #2293A7;
 	font-weight: 500;
 }
 hr {
@@ -235,12 +253,12 @@ hr {
 	padding-bottom: .3125em;
 }
 .primaryNav ul ul ul ul li a {
-	background-color: #3f78e0;
+	background-color: #2293A7;
 	padding: .75em ;
 	width: 80%;
 }
 .primaryNav ul ul ul ul li a:hover {
-	background-color: #3f78e0;
+	background-color: #2293A7;
 }
 .primaryNav ul ul ul ul li a:link:after,
 .primaryNav ul ul ul ul li a:visited:after {

@@ -30,19 +30,27 @@ echo
             <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
               <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                  <a class="nav-link active" href="Home">Home</a>
+                  <a href="Home" class="nav-link ' ?><?php if ($page == "index.php") {
+               echo 'active';
+             } ?><?php echo '">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link" href="About">About Us</a>
+                  <a href="About" class="nav-link ' ?><?php if ($page == "AboutUs.php") {
+               echo 'active';
+             } ?><?php echo ' " >About Us</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link" href="Contact">Contact Us</a>
+                  <a class="nav-link ' ?><?php if ($page == "contact.php") {
+               echo 'active';
+             } ?><?php echo ' " href="Contact">Contact Us</a>
                 </li>
               </ul>
 
               <!-- Contact Us Button in Offcanvas -->
               <div class="d-lg-none mt-auto">
-                <a href="RequestDemo" class="btn btn-sm text-white rounded-pill w-100 mt-4">Request a demo</a>
+                <a href="RequestDemo ' ?><?php if ($page == "RequestDemo.php") {
+               echo 'active';
+             } ?><?php echo ' " class="btn btn-sm text-white rounded-pill w-100 mt-4">Request a demo</a>
               </div>
             </div>
           </div>
