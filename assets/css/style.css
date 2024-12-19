@@ -31252,6 +31252,13 @@ figure img {
     background-color: var(--bs-soft-blue) !important
 }
 
+.bg-soft-blue-img {
+    background-image: url(../img/home/blob-scene-haikei.svg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem;
+}
+
 .bg-soft-sky {
     background-color: var(--bs-soft-sky) !important
 }
@@ -31786,7 +31793,7 @@ blockquote.icon {
     padding: 0
 }
 
-blockquote.icon:before {
+/* blockquote.icon:before {
     content: "\201d";
     position: absolute;
     top: -1.5rem;
@@ -31795,7 +31802,7 @@ blockquote.icon:before {
     font-size: 10rem;
     line-height: 1;
     z-index: 1
-}
+} */
 
 blockquote.icon-top {
     padding-top: 3.75rem;
