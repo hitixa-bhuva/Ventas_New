@@ -15,12 +15,13 @@ class SendMail
         $subject = isset($inputData['Subject']) ? $inputData['Subject'] : '';
         $body = isset($inputData['Body']) ? $inputData['Body'] : '';
 
+        
         $mail = new PHPMailer();
         $mail->SMTPDebug = 0; // Change to 3 for detailed debug output
         $mail->isSMTP();
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'tls';
-        $mail->Host = "smtp.gmail.com";
+        $mail->Host = "smtp.hostinger.com";
         $mail->Port = 587;
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
@@ -32,7 +33,7 @@ class SendMail
         $mail->addAddress($this->ReciverEmail);
 
 
-        
+     
         // Optional: Configure SSL options
         $mail->SMTPOptions = [
             'ssl' => [

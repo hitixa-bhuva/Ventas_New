@@ -1113,28 +1113,13 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
             <p class="text-muted">We'll be in touch shortly with your demo details.</p>
           </div>
         </form>
+        <div id="feedbackMessage" style="display: none; font-size: 14px; margin-top: 10px;"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- navbar script -->
-<script>
-  document.querySelector('.icon-scroll').addEventListener('click', function () {
-    var targetSection = document.getElementById('trialSection');
 
-    if (targetSection) {
-      var targetPosition = targetSection.offsetTop;
-      console.log("Scrolling to position: " + targetPosition);
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
-    } else {
-      console.error("Target section with ID 'services' not found.");
-    }
-  });
-</script>
 
 <?php
 include __DIR__ . '/assets/A_Layout/Footer/footer.php';

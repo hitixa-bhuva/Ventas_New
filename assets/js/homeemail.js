@@ -30,11 +30,11 @@
 
       // Create email data
       const emailData = {
-          Host: "216.10.241.228",
-          SenderEmail: "hitixa.bhuva@theuniqueitsolution.com",
-          SenderEmailPassword: "htitxa@123455",
-          ReciverEmail: "hitixa.bhuva@theuniqueitsolution.com",
-          Subject: subject,
+        Host: "smtp.hostinger.com",
+        SenderEmail: "website@theventas.com",
+        SenderEmailPassword: "PM*Ft7#b2@",
+        ReciverEmail: "hitixa.bhuva@theuniqueitsolution.com",
+        Subject: subject,
           Body: `
    <!DOCTYPE html>
 <html lang="en">
@@ -180,7 +180,7 @@
       // Debugging in console
       console.log("Form data:", emailData);
 
-      const apiUrl = "https://api.theuniqueitsolution.com/mail/Api/sendmailapi.php";
+      const apiUrl = "./Mail/sendmail.php";
       const headers = {
           "Content-Type": "application/json",
       };

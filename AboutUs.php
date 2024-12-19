@@ -437,7 +437,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 
 
 <!-- navbar script -->
-<script>
+<!-- <script>
   document.querySelector('.icon-scroll').addEventListener('click', function () {
     var targetSection = document.getElementById('trialSection');
 
@@ -452,7 +452,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
       console.error("Target section with ID 'services' not found.");
     }
   });
-</script>
+</script> -->
 
 <?php
 include __DIR__ . '/assets/A_Layout/Footer/footer.php';

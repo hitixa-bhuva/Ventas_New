@@ -206,11 +206,11 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
       </div>
     </div>
     
-<script>
+<!-- <script>
   const inputField = document.getElementById('newsletterInput');
 
   inputField.addEventListener('input', () => {
-    inputField.value = inputField.value.replace(/[^0-9]/g, ''); // Removes non-numeric characters
+    inputField.value = inputField.value.replace(/[^0-9]/g, '');
   });
 
   function validateInput() {
@@ -220,24 +220,26 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
     }
     return true;
   }
-</script>
+</script> -->
 
-    <script>
-      document.querySelector('.icon-scroll').addEventListener('click', function() {
-      var targetSection = document.getElementById('trialSection');
-    
-      if (targetSection) {
-        var targetPosition = targetSection.offsetTop;
-        console.log("Scrolling to position: " + targetPosition);
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth' 
-        });
-      } else {
-        console.error("Target section with ID 'services' not found.");
-      }
-    });
-    </script>
+   <!-- Add this script at the bottom of the body -->
+
+<!-- <script>
+  document.querySelector('.icon-scroll').addEventListener('click', function() {
+    var targetSection = document.getElementById('trialSection');
+
+    if (targetSection) {
+      var targetPosition = targetSection.offsetTop;
+      console.log("Scrolling to position: " + targetPosition);
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    } else {
+      console.error("Target section with ID 'trialSection' not found.");
+    }
+  });
+</script> -->
 
 <?php
 include __DIR__ . '/assets/A_Layout/Footer/footer.php';
