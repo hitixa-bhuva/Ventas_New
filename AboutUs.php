@@ -82,11 +82,11 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
     <div class="row gy-10 gy-sm-13 gx-md-8 gx-xl-12 align-items-center mb-10 mb-md-10">
       <div class="col-lg-6">
         <div class="row gx-md-5 gy-5">
-          <div class="col-md-6">
+          <div class="col-md-6 hide-on-small-screen ">
             <figure class="rounded"><img src="./assets/img/about/g14.jpg" alt=""></figure>
           </div>
           <!--/column -->
-          <div class="col-md-6 align-self-end">
+          <div class="col-md-6 align-self-end hide-on-small-screen ">
             <figure class="rounded"><img src="./assets/img/about/g15.jpg" alt=""></figure>
           </div>
           <!--/column -->
@@ -128,7 +128,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 </section>
 
 <!-- Our Commitment to You -->
-<section class="container wrapper bg-light angled upper-end lower-end mt-10">
+<section class="container wrapper bg-light angled upper-end lower-end ">
   <div class="row gx-lg-8 gx-xl-12 gy-10 mb-10 mb-md-10 align-items-center">
     <div class="col-md-8 col-lg-6 position-relative">
       <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1"
@@ -176,8 +176,8 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 </section>
 
 <!-- What Makes Ventas Different -->
-<section class="wrapper bg-light angled upper-end lower-end">
-  <div class="container py-12 py-md-12">
+<section class="wrapper bg-light angled upper-end lower-end mb-5">
+  <div class="container mt-5">
     <div class="row mb-5">
       <div class="col-md-10 col-xl-8 col-xxl-7 mx-auto text-center">
         <h2 class="display-4 mb-4 ">What Makes Ventas <span
@@ -303,7 +303,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
     </section> -->
 
 <!-- book now -->
-<section class="booking-section">
+<section class="booking-section mt-5">
   <div class="floating-shapes">
     <div class="shape"></div>
     <div class="shape"></div>

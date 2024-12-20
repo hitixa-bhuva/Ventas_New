@@ -81,10 +81,10 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
             </div>
           </div>
           <div class="col-md-6 mt-8 mt-md-0">
-            <div class="sub-div-color d-flex justify-content-center rounded-4 position-relative">
+            <div class="sub-div-color d-flex justify-content-center rounded-4 position-relative girlimgresponsiv">
               <img
                 src="./assets/img/home/young-tired-business-woman-with-folders-office-desk-isolated-white-background-removebg-preview.avif"
-                alt="hero-img" class="bottom-0 me-8" />
+                alt="hero-img" class="bottom-0 me-8 " width="100%" />
             </div>
           </div>
           <div class="col-md-6 flex-column justify-content-end mt-5 d-none d-md-flex">
@@ -146,134 +146,139 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 <!--Hero Section-->
 
 
-<!--Hero Section phone size-->
-<section class="dont-worry-second d-block d-md-none" id="services">
-  <div class="container-fluid hero-section-container">
-    <div class="row align-items-center gy-6 gy-xl-0">
-      <div class="col-lg-5 col-xxl-6 col-12">
-        <div class="d-flex flex-column gap-5">
-          <div class="d-flex flex-column gap-3">
-            <div class="d-flex flex-column gap-2">
-              <h2 class="mb-0 display-2 fw-bolder hero-section-h1-tag">
-                Having <span class="text-gradient gradient-7 gradient-font">difficulty</span> managing leads for your
-                <span class="text-gradient gradient-7 gradient-font">export</span> or
-                <span class="text-gradient gradient-7 gradient-font">trading</span> business?
-              </h2>
+  <!--Hero Section phone size-->
+  <section class="dont-worry-second d-block d-md-none" id="services">
+    <div class="container-fluid hero-section-container">
+      <div class="row align-items-center gy-6 gy-xl-0">
+        <div class="col-lg-5 col-xxl-6 col-12">
+          <div class="d-flex flex-column gap-5">
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex flex-column gap-2">
+                <h2 class="mb-0 display-2 fw-bolder hero-section-h1-tag">
+                  Having <span class="text-gradient gradient-7 gradient-font">difficulty</span> managing leads for your
+                  <span class="text-gradient gradient-7 gradient-font">export</span> or
+                  <span class="text-gradient gradient-7 gradient-font">trading</span> business?
+                </h2>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-xxl-6 col-lg-7 col-12">
-        <div class="row gx-0 gy-4 gy-lg-0">
-          <div class="col-md-6 d-flex align-items-end justify-content-start " style=" background-image: url(./assets/img/home/dots-green.svg);
-            background-repeat: no-repeat;
-            background-position: right center;
-            background-size: contain;">
-            <div class="position-relative me-n7">
-              <div class="position-absolute bottom-25 start-0 end-0 d-flex flex-column align-items-start">
-                <div class="bg-white rounded-pill py-2 px-3 shadow mb-2 d-inline-block">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="#F59E0B" stroke-width="2">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
-                  <span class="text-dark fw-semibold">Manual</span> <br>
-                  <!-- <span class="fs-12 text-nowrap">lead management</span> -->
+        <div class="col-xxl-6 col-lg-7 col-12">
+          <div class="row gx-0 gy-4 gy-lg-0">
+            <div class="col-md-6 d-flex align-items-end justify-content-start " style=" background-image: url(./assets/img/home/dots-green.svg);
+              background-repeat: no-repeat;
+              background-position: right center;
+              background-size: contain;">
+              <div class="position-relative me-n7">
+                <div class="position-absolute bottom-25 start-0 end-0 d-flex flex-column align-items-start">
+                  <div class="bg-white rounded-pill py-2 px-3 shadow mb-2 d-inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="#F59E0B" stroke-width="2">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <span class="text-dark fw-semibold">Manual</span> <br>
+                    <!-- <span class="fs-12 text-nowrap">lead management</span> -->
+                  </div>
+                  <div class="bg-white rounded-pill py-2 px-3 shadow mb-2 d-inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#139A74" class="bi bi-unlock"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2M3 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" />
+                    </svg>
+                    <span class="text-dark fw-semibold">No Security</span>
+                  </div>
+                  <div class="bg-white rounded-pill py-2 px-3 shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="#E53E3E" stroke-width="2">
+                      <path d="M18 20V10M12 20V4M6 20v-6" fill="#E53E3E" />
+                    </svg>
+                    <span class="text-dark fw-semibold">2000+</span>
+                  </div>
                 </div>
-                <div class="bg-white rounded-pill py-2 px-3 shadow mb-2 d-inline-block">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#139A74" class="bi bi-unlock"
-                    viewBox="0 0 16 16">
+                <div class="custom-svg">
+                  <svg width="205" height="189" viewBox="0 0 205 189" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2M3 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" />
+                      d="M0.0391235 179.983C0.0391235 80.8399 80.4107 0.468323 179.554 0.468323H189.034C197.318 0.468323 204.033 7.18386 204.033 15.4679V166.407C204.033 178.626 194.127 188.532 181.908 188.532H8.58745C3.86634 188.532 0.0391235 184.704 0.0391235 179.983Z"
+                      fill="#f3f8f5" />
                   </svg>
-                  <span class="text-dark fw-semibold">No Security</span>
-                </div>
-                <div class="bg-white rounded-pill py-2 px-3 shadow">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="#E53E3E" stroke-width="2">
-                    <path d="M18 20V10M12 20V4M6 20v-6" fill="#E53E3E" />
-                  </svg>
-                  <span class="text-dark fw-semibold">2000+</span>
                 </div>
               </div>
-              <div class="custom-svg">
-                <svg width="205" height="189" viewBox="0 0 205 189" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </div>
+            <div class="col-md-6 flex-column justify-content-end d-none d-md-flex">
+              <div class="d-flex justify-content-center rounded-4 position-relative mx-5 sub-div-color">
+                <img src="./assets/img/home/frustrated-businessman-his-office-removebg-preview.avif" style="width: 90%;"
+                  alt="hero-img" class="bottom-0" />
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-start justify-content-end" style=" background-image: url(./assets/img/home/dots-green.svg);
+              background-repeat: no-repeat;
+              background-position: left center;
+              background-size: contain;">
+              <div class="position-relative ">
+                <div class="position-absolute bottom-25 start-0 end-0 d-flex flex-column align-items-start">
+                  <div class="bg-white rounded-pill py-2 px-3 shadow mb-2 d-inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#F59E0B"
+                      class="bi bi-graph-down-arrow" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M0 0h1v15h15v1H0zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5" />
+                    </svg>
+                    <span class="text-dark fw-semibold">Less Clients!</span>
+                  </div>
+                  <div class="bg-white rounded-pill py-2 px-3 shadow mb-2 d-inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#139A74" class="bi bi-bell"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+                    </svg>
+                    <span class="text-dark fw-semibold">No Regular</span>
+                  </div>
+                  <div class="bg-white rounded-pill py-2 px-3 shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#E53E3E"
+                      class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                      <path
+                        d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z" />
+                    </svg>
+                    <span class="text-dark fw-semibold">No Analytics</span>
+                  </div>
+                  <div class="bg-white rounded-pill py-2 px-3 shadow mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="#E53E3E" stroke-width="2">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 6v6l4 2" />
+                    </svg>
+                    <span class="text-dark fw-semibold">Time Consuming</span>
+                  </div>
+                </div>
+                <svg width="204" height="189" viewBox="0 0 204 189" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M0.0391235 179.983C0.0391235 80.8399 80.4107 0.468323 179.554 0.468323H189.034C197.318 0.468323 204.033 7.18386 204.033 15.4679V166.407C204.033 178.626 194.127 188.532 181.908 188.532H8.58745C3.86634 188.532 0.0391235 184.704 0.0391235 179.983Z"
-                    fill="#f3f8f5" />
+                    d="M203.994 9.01663C203.994 108.16 123.622 188.532 24.4789 188.532H14.9995C6.71548 188.532 -3.05176e-05 181.816 -3.05176e-05 173.532V22.5934C-3.05176e-05 10.374 9.90572 0.468292 22.1251 0.468292H195.446C200.167 0.468292 203.994 4.29552 203.994 9.01663Z"
+                    fill="#fbf1f4" />
                 </svg>
+
               </div>
             </div>
-          </div>
-          <div class="col-md-6 flex-column justify-content-end d-none d-md-flex">
-            <div class="d-flex justify-content-center rounded-4 position-relative mx-5 sub-div-color">
-              <img src="./assets/img/home/frustrated-businessman-his-office-removebg-preview.avif" style="width: 90%;"
-                alt="hero-img" class="bottom-0" />
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-start justify-content-end" style=" background-image: url(./assets/img/home/dots-green.svg);
-            background-repeat: no-repeat;
-            background-position: left center;
-            background-size: contain;">
-            <div class="position-relative ">
-              <div class="position-absolute bottom-25 start-0 end-0 d-flex flex-column align-items-start">
-                <div class="bg-white rounded-pill py-2 px-3 shadow mb-2 d-inline-block">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#F59E0B"
-                    class="bi bi-graph-down-arrow" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M0 0h1v15h15v1H0zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5" />
-                  </svg>
-                  <span class="text-dark fw-semibold">Less Clients!</span>
-                </div>
-                <div class="bg-white rounded-pill py-2 px-3 shadow mb-2 d-inline-block">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#139A74" class="bi bi-bell"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
-                  </svg>
-                  <span class="text-dark fw-semibold">No Regular</span>
-                </div>
-                <div class="bg-white rounded-pill py-2 px-3 shadow">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#E53E3E"
-                    class="bi bi-bar-chart-line" viewBox="0 0 16 16">
-                    <path
-                      d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z" />
-                  </svg>
-                  <span class="text-dark fw-semibold">No Analytics</span>
-                </div>
-                <div class="bg-white rounded-pill py-2 px-3 shadow mt-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="#E53E3E" stroke-width="2">
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M12 6v6l4 2" />
-                  </svg>
-                  <span class="text-dark fw-semibold">Time Consuming</span>
-                </div>
-              </div>
-              <svg width="204" height="189" viewBox="0 0 204 189" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M203.994 9.01663C203.994 108.16 123.622 188.532 24.4789 188.532H14.9995C6.71548 188.532 -3.05176e-05 181.816 -3.05176e-05 173.532V22.5934C-3.05176e-05 10.374 9.90572 0.468292 22.1251 0.468292H195.446C200.167 0.468292 203.994 4.29552 203.994 9.01663Z"
-                  fill="#fbf1f4" />
-              </svg>
+            <div class="d-grid d-md-flex flex-row gap-2 justify-content-center dont-worry-btn-margin mb-3">
+            <div>
+              <span class="btn3 dont-worry-btn">Don't Worry </span>
 
             </div>
-          </div>
-          <div class="d-grid d-md-flex flex-row gap-2 justify-content-center dont-worry-btn-margin">
-            <span class="btn3 dont-worry-btn" style="margin-top: 1.5rem;">Don't Worry <img
-                src="./assets/img/icons/arrow/down-arrow (1).png" alt="hero dropdown"></span>
+            <div class="icon-scroll-container" id="section1">
+              <div class="icon-scroll"></div>
+            </div>
             <span class="d-flex align-items-center">
             </span>
+          </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 <!--Hero Section-->
 
 
 <!-- don't warry -->
-<section id="trialSection" class="mt-5">
+<section id="trialSection">
   <div class="container-fluid mt-5">
     <div class="outer-box rounded-4 gradient-background">
       <div class="inner-box-worry">
@@ -382,7 +387,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 <!-- How It Works -->
 
 <!-- Latest Projects -->
-<section class="wrapper bg-light wrapper-border mt-10">
+<section class="wrapper bg-light">
   <div class="container py-3 pt-md-10 ">
     <div class="row align-items-center mb-10">
       <div class="col-md-8 col-lg-9 col-xl-8 col-xxl-8 col-12 custom-col-12">
@@ -397,8 +402,8 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
           transform your workflow.
         </p>
       </div>
-      <div class="col-md-4 col-lg-3 ms-md-auto text-md-end mt-5 mt-md-0">
-        <a href="Contact" class="btn btn  text-white rounded-pill mb-0">Contact Us
+      <div class="col-md-4 col-lg-3 ms-md-auto text-md-end mt-5 mt-md-0 contact-btn ">
+        <a href="Contact" class="btn btn  text-white rounded-pill mb-0 ">Contact Us
         </a>
       </div>
     </div>
@@ -597,8 +602,6 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
       <div class="col-lg-10 col-xl-9 col-xxl-8 mx-auto position-relative">
         <img src="./assets/img/svg/doodle3.svg" class="h-11 position-absolute d-none d-lg-block"
           style="top: -45%; left: 23%" alt="doodle3" />
-        <img src="./assets/img/svg/doodle4.svg" class="h-8 position-absolute d-none d-lg-block"
-          style="top: 6%; right: 2%" alt="doodle4" />
         <h4 class="fs-16 text-uppercase text-muted mb-3">
           Why Choose Ventas?
         </h4>
@@ -704,12 +707,12 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
   <div class="container pt-10 pb-10 pt-md-10 pb-md-22 text-center">
     <div class="row">
       <div class="col-lg-10 col-xl-9 col-xxl-8 mx-auto">
-        <h3 class="display-4 mb-15 mb-md-6 px-lg-10">
+        <h3 class="display-4 mb-md-6 px-lg-10 yearlypackage">
           Achieve more with our <span class="text-gradient gradient-7">all-inclusive packages!</span>
         </h3>
-        <div class="pricing-switcher-wrapper switcher">
+        <span class="pricing-switcher-wrapper switcher">
           <p class="mb-0 ps-3">Yearly packages</p>
-        </div>
+        </span>
       </div>
     </div>
   </div>
@@ -718,8 +721,8 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 <section class="wrapper bg-light">
   <div class="container py-12 py-md-14">
     <div class="pricing-wrapper position-relative mt-n22 mt-md-n24">
-      <div class="row gy-6 mt-3 mt-md-5 pricing-row-img">
-        <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
+      <div class="row gy-6  mt-md-5 pricing-row-img">
+        <div class="col-md-6 col-lg-4 offset-lg-0">
           <div class="pricing card shadow-lg text-center">
             <div class="card-body">
               <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="#b7b7b7" viewBox="0 0 384 512">
@@ -754,7 +757,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
         <div class="col-md-6 col-lg-4 popular">
           <div class="pricing card shadow-lg text-center">
             <div class="card-body">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#e8ae4c" viewBox="0 0 384 512">
+              <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" fill="#e8ae4c" viewBox="0 0 384 512">
                 <path
                   d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z" />
               </svg>
@@ -786,7 +789,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
         <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
           <div class="pricing card shadow-lg text-center">
             <div class="card-body">
-            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="#df9f75" viewBox="0 0 384 512">
+              <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="#df9f75" viewBox="0 0 384 512">
                 <path
                   d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z" />
               </svg>
@@ -822,21 +825,24 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 </section>
 
 <!-- Need Customization -->
-<div class="wrapper">
-  <div class="container">
-    <div class="card bg-soft-blue-img">
-      <div class="card-body p-0">
-        <div class="swiper-slide text-center">
-          <h4 class="display-4 mb-3">Need Customization?</h4>
-          <blockquote class="icon fs-lg">
-            <p>
-              “If you have unique requirements or need a customized
-              solution, connect with us directly. <br> We’ll work with you
-              to tailor Ventas to fit your specific business needs
-              perfectly!”
-            </p>
-            <a href="Contact" class="btn text-white rounded-pill mb-0 mt-5">Connect Now</a>
-          </blockquote>
+<div class="container py-5">
+  <div class="custom-section p-14 custom-padding ">
+    <div class="custom-shape"></div>
+    <!-- Main Content -->
+    <div class="row align-items-center">
+      <div class="col-lg-12 text-center">
+        <h2 class="display-4 fw-bold mb-4">Need Customization?</h2>
+        <p class="lead mb-4"> “If you have unique requirements or need a customized
+          solution, connect with us directly. <br> We’ll work with you
+          to tailor Ventas to fit your specific business needs
+          perfectly!”</p>
+
+        <div class="d-flex gap-3 mb-5 justify-content-center">
+          <a href="Contact">
+            <button class="custom-btn btn btn-primary">
+              <i class="fas fa-comments me-2"></i>Connect Now
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -1006,7 +1012,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
             <path
               d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
           </svg>
-          Book in 2 minutes
+          Book Demo in 2 minutes
         </div>
         <div class="icon-wrapper animate__animated animate__fadeInLeft">
           <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#343f52" class="bi bi-person-check"
