@@ -10,8 +10,8 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 
 <!--Hero Section-->
 <section class="dont-worry-fist d-md-block d-none">
-  <div class="container-fluid hero-section-container">
-    <div class="row align-items-center gy-6 gy-xl-0">
+  <div class="container-fluid hero-section-container d-flex justify-content-center">
+    <div class="row container align-items-center gy-6 gy-xl-0">
       <div class="col-lg-5 col-xxl-6 col-12">
         <div class="d-flex flex-column gap-5">
           <div class="d-flex flex-column gap-3">
@@ -453,7 +453,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
       </div>
     </div>
     <div class="row gx-md-8 gx-xl-10">
-      <div class="col-lg-6">
+      <div class="col-lg-6 mb-10">
         <div class="card bg-soft-leaf mb-10 h-100">
           <div class="card-body pb-0">
             <div class="post-category mb-3 text-leaf">Lead Management</div>
@@ -469,8 +469,8 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
         </div>
       </div>
 
-      <div class="col-lg-6">
-        <div class="card bg-soft-pink h-100">
+      <div class="col-lg-6 mb-10">
+        <div class="card bg-soft-pink h-100 LeadTracking">
           <div class="card-body pb-0">
             <div class="post-category mb-3 text-pink">Lead Tracking</div>
             <h3 class="h1 post-title mb-3">
@@ -488,7 +488,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
       </div>
     </div>
 
-    <div class="card bg-soft-blue mb-10 mt-md-10 mt-sm-10 mangeteam">
+    <div class="card bg-soft-blue mb-10 LeadTracking ">
       <div class="card-body">
         <div class="row gy-10 align-items-center">
           <div class="col-lg-4 order-lg-2 offset-lg-1">
@@ -512,7 +512,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
     </div>
     <!-- efef -->
     <div class="row gx-md-8 gx-xl-10">
-      <div class="col-lg-6">
+      <div class="col-lg-6 mb-10">
         <div class="card bg-soft-leaf mb-10 h-100">
           <div class="card-body pb-0">
             <div class="post-category mb-3 text-leaf">
@@ -532,8 +532,8 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
         </div>
       </div>
 
-      <div class="col-lg-6">
-        <div class="card bg-soft-pink h-100">
+      <div class="col-lg-6 mb-10">
+        <div class="card bg-soft-pink h-100 LeadTracking mb-10">
           <div class="card-body pb-0">
             <div class="post-category mb-3 text-pink">Lead Details</div>
             <h3 class="h1 post-title mb-3">Conversation History</h3>
@@ -565,7 +565,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
           </div>
         </div>   -->
 
-    <div class="card bg-soft-blue mb-10 mt-md-10 mt-sm-10 Leads-Stages-card">
+    <div class="card bg-soft-blue mb-10 LeadTracking">
       <div class="card-body">
         <div class="row gy-10 align-items-center">
           <div class="col-lg-4 order-lg-2 offset-lg-1">

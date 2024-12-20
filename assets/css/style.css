@@ -31277,6 +31277,11 @@ figure img {
 .bg-soft-pink {
     background-color: var(--bs-soft-pink) !important
 }
+@media (max-width: 768px) {
+  .LeadTracking {
+    margin-top: 3rem;
+  }
+}
 
 .bg-soft-fuchsia {
     background-color: var(--bs-soft-fuchsia) !important
@@ -49908,11 +49913,6 @@ footer [class*=col-] .widget+.widget {
 
 /*# sourceMappingURL=style.css.map */
 
-@media (max-width: 500px) {
-    .mangeteam {
-        margin-top: 2.5rem !important;
-    }
-}
 
 @media (max-width: 500px) {
     .CustomReminders {
