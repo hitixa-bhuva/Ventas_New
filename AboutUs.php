@@ -429,7 +429,6 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
             <p class="text-muted">We'll be in touch shortly with your demo details.</p>
           </div>
         </form>
-        <div id="feedbackMessage" style="display: none; font-size: 14px; margin-top: 10px;"></div>
       </div>
     </div>
   </div>
