@@ -16,6 +16,10 @@ bookingformemailForm.addEventListener("submit", function (event) {
   const dateTime = document.querySelector('#dateTime').value;
   const message = document.querySelector('textarea[placeholder="Your Message"]').value;
 
+     // Check if any of the required fields are empty
+     if (!name || !email || !phone || !company || !teamSize || !dateTime || !message) {
+        return; // Stop the form submission
+      }
   // Hardcoded subject
   const subject = "Book your demo Form Submission";
 

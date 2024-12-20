@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://theventas.com/</loc>
+  <lastmod>2024-12-20T10:06:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://theventas.com/Home</loc>
+  <lastmod>2024-12-20T10:06:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://theventas.com/About</loc>
+  <lastmod>2024-12-20T10:06:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://theventas.com/Contact</loc>
+  <lastmod>2024-12-20T10:06:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://theventas.com/RequestDemo</loc>
+  <lastmod>2024-12-20T10:06:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://theventas.com/SiteMap</loc>
+  <lastmod>2024-12-19T04:05:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
